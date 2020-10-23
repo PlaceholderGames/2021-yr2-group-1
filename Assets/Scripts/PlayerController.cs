@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveDirection;
     public float gravityScale;
 
+    //animator variable
+    public Animator anim;
+
     //Torch Variables
     public GameObject torch;
     public bool torchToggle;
@@ -86,5 +89,16 @@ public class PlayerController : MonoBehaviour
 
         //Sends input to controller for movement
         controller.Move(moveDirection * Time.deltaTime);
+
+
+        //animation updates
+        //gets the player input for a & d and applies them to a float called strafe
+        float strafe = Input.GetAxis("Horizontal");
+        //gets the player input for w & a and applies them to a float called forward
+        float forward = Input.GetAxis("Vertical");
+
+        //setting the float parameters on the anim controller to be set by strafe and forward
+        anim.SetFloat("Forward", forward);
+        anim.SetFloat("Right", strafe);
     }
 }
