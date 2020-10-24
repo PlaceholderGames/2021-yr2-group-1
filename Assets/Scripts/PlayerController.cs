@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
         if (controller.isGrounded)
         {
             //Checks if shift is held and changes speed
-            if (Input.GetKeyDown(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift))
             {
                 moveSpeed = sprintSpeed;
             }
@@ -55,9 +55,13 @@ public class PlayerController : MonoBehaviour
             }
 
             //Checks if jump button is pressed and jumps if so
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButton("Jump"))
             {
                 verticalVelocity = jumpForce;
+            }
+            else if (!Input.GetButton("Jump"))
+            {
+                verticalVelocity = 0f;
             }
         }
 
