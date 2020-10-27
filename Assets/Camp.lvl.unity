@@ -8656,10 +8656,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   sprintSpeed: 8
-  jumpForce: 5
+  jumpForce: 10
   verticalVelocity: 0
   controller: {fileID: 1969009770}
-  gravityScale: 7
+  gravityScale: 22
   anim: {fileID: 1969009771}
   torch: {fileID: 911304333}
   torchToggle: 0
