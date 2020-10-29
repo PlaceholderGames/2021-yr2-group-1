@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.AI;
+
 
 public class AIpatrol : MonoBehaviour
 {
@@ -10,6 +12,10 @@ public class AIpatrol : MonoBehaviour
     public Transform[] points; // create an array of points which I can assign for the NPC to move between
     private int destPoint = 0; // initialising the destination point
     private NavMeshAgent agent;
+
+    //animator variable
+    public Animator anim;
+    public bool isWalking = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +25,8 @@ public class AIpatrol : MonoBehaviour
         // Disabling auto-braking allows for continuous movement
         // between points (ie, the agent doesn't slow down as it
         // approaches a destination point).
-        agent.autoBraking = false;
+        //turning this off as i want it to happen for now
+        // agent.autoBraking = false;
 
         GotoNextPoint();
     }
@@ -30,8 +37,14 @@ public class AIpatrol : MonoBehaviour
         if (points.Length == 0)
             return;
 
+        //something to sleep the ai in here 
+        isWalking = false;
+
         // Set the agent to go to the currently selected destination.
         agent.destination = points[destPoint].position;
+
+        //sets state of is walking to true
+        isWalking = true;
 
         // Choose the next point in the array as the destination,
         // cycling to the start if necessary.
@@ -42,6 +55,9 @@ public class AIpatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //update animator for walking or not
+        anim.SetBool("walking", isWalking);
+
         // Choose the next destination point when the agent gets
         // close to the current one.
         if (!agent.pathPending && agent.remainingDistance < 0.5f)
