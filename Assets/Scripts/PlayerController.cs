@@ -96,5 +96,8 @@ public class PlayerController : MonoBehaviour
         //setting the float parameters on the anim controller to be set by strafe and forward
         anim.SetFloat("Forward", forward);
         anim.SetFloat("Right", strafe);
+
+        // add in toggle for animation update
+        anim.SetBool("torchTriggered", torchToggle);
     }
 }
