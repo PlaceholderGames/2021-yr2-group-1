@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4736330537024122}
   - component: {fileID: 33057221378861296}
   - component: {fileID: 23969228000242952}
+  - component: {fileID: 4053890381755872868}
   m_Layer: 0
   m_Name: desert_box002
   m_TagString: Untagged
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4053890381755872868
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176038801826910}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 9f6e6c34d6965a7488bd4d8c3c2cceee, type: 3}
