@@ -9,7 +9,14 @@ public class GameControl : MonoBehaviour
 {
     public static GameControl control; //create instance of gamecontrol class
 
-    public float collectionPercentage; //the variable we want to save/load
+    public double collectionPercentage; //the variable we want to save/load
+    public int noCollected;
+    int noOfCollectables = 6;
+
+    public void Update()
+    {
+        collectionPercentage = (double)noCollected / (double)noOfCollectables * 100;
+    }
 
     //replaced start with awake as it happens first
     void Awake()
@@ -27,7 +34,8 @@ public class GameControl : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(10, 10, 150, 30), "Collection Percentage: " + collectionPercentage); //display on gui for testing purposes
+        GUI.Label(new Rect(10, 10, 300, 30), "Collection Percentage: " + collectionPercentage); //display on gui for testing purposes
+        GUI.Label(new Rect(10, 20, 150, 30), "Collection Number: " + noCollected); //display on gui for testing purposes
     }
 
     public void Save()
@@ -36,6 +44,7 @@ public class GameControl : MonoBehaviour
         FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.dat"); //tell where to save
 
         PlayerData data = new PlayerData(); //create new instance of playerdata and set the variables based on the game at save
+        data.noCollected = noCollected;
         data.collectionPercentage = collectionPercentage;
 
         bf.Serialize(file, data); //translate the data into binary and save to file
@@ -50,7 +59,7 @@ public class GameControl : MonoBehaviour
             FileStream file = File.Open(Application.persistentDataPath + "/playerInfo.dat", FileMode.Open);
             PlayerData data = (PlayerData)bf.Deserialize(file); //casts data pulled into playerdata object
             file.Close();
-
+            noCollected = data.noCollected;
             collectionPercentage = data.collectionPercentage;
         }
     }
@@ -59,12 +68,16 @@ public class GameControl : MonoBehaviour
 
 //private class for this only, it will be serialized so it fits into binary format
 [Serializable]
-class PlayerData
+public class PlayerData
 {
-    public float collectionPercentage;
+    public double collectionPercentage;
+    public int noCollected;
+    public int noOfCollectables;
 
     public PlayerData()
     {
         collectionPercentage = 0;
+        noCollected = 0;
+        noOfCollectables = 6;
     }
 }
