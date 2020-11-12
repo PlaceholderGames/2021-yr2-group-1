@@ -4,24 +4,43 @@ using UnityEngine;
 using System;
 using System.Runtime.Serialization.Formatters.Binary; //enables us to write out a binary save file
 using System.IO; //enabling input output 
+using System.Security.Cryptography;
+using System.Collections.Specialized;
+using System.Diagnostics;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
     public static GameControl control; //create instance of gamecontrol class
-
+    private GameObject playerObj = null;
     public double collectionPercentage; //the variable we want to save/load
     public int noCollected;
     int noOfCollectables = 6;
+    public float PosX, PosY, PosZ;
+    public int sceneNumber = 1;
+    bool isBeingLoaded = false;
 
     public void Update()
     {
         collectionPercentage = (double)noCollected / (double)noOfCollectables * 100;
+        UnityEngine.Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z);
     }
 
-    //replaced start with awake as it happens first
+    private void Start()
+    {
+        if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
+        if (GameControl.control.isBeingLoaded)
+        {
+            playerObj.transform.position = new Vector3(PosX, PosY, PosZ);
+            GameControl.control.isBeingLoaded = false;
+        }
+    }
+
+    //happens before start()
     void Awake()
     {
-        if(control == null) //check if control already exists and create accordingly
+        if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
+        if (control == null) //check if control already exists and create accordingly
         {
             DontDestroyOnLoad(gameObject);
             control = this;
@@ -46,6 +65,9 @@ public class GameControl : MonoBehaviour
         PlayerData data = new PlayerData(); //create new instance of playerdata and set the variables based on the game at save
         data.noCollected = noCollected;
         data.collectionPercentage = collectionPercentage;
+        data.PosX = playerObj.transform.position.x;
+        data.PosY = playerObj.transform.position.y;
+        data.PosZ = playerObj.transform.position.z;
 
         bf.Serialize(file, data); //translate the data into binary and save to file
         file.Close();
@@ -61,6 +83,11 @@ public class GameControl : MonoBehaviour
             file.Close();
             noCollected = data.noCollected;
             collectionPercentage = data.collectionPercentage;
+            PosX = data.PosX;
+            PosY = data.PosY;
+            PosZ = data.PosZ;
+            isBeingLoaded = true;
+            SceneManager.LoadScene(1);
         }
     }
 
@@ -73,8 +100,9 @@ public class PlayerData
     public double collectionPercentage;
     public int noCollected;
     public int noOfCollectables;
-    //player position
-    //player level
+    public float PosX, PosY, PosZ;
+    public int sceneNumber;
+    //player level possibly - public int SceneID;
     //which paintings have been collected, so they cant be collected again
 
     public PlayerData()
@@ -82,5 +110,9 @@ public class PlayerData
         collectionPercentage = 0;
         noCollected = 0;
         noOfCollectables = 6;
+        PosX = 0f;
+        PosY = -1.5f;
+        PosZ = 0f;
+        sceneNumber = 1;
     }
 }
