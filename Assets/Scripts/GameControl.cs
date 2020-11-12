@@ -12,13 +12,14 @@ using UnityEngine.SceneManagement;
 public class GameControl : MonoBehaviour
 {
     public static GameControl control; //create instance of gamecontrol class
-    private GameObject playerObj = null;
+    public GameObject playerObj = null; //set to player character in unity
     public double collectionPercentage; //the variable we want to save/load
     public int noCollected;
     int noOfCollectables = 6;
     public float PosX, PosY, PosZ;
-    public int sceneNumber = 1;
-    bool isBeingLoaded = false;
+    //public int sceneNumber = 1; to be used later
+    //bool isBeingLoaded = false; <- this didn't work
+
 
     public void Update()
     {
@@ -26,20 +27,9 @@ public class GameControl : MonoBehaviour
         UnityEngine.Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z);
     }
 
-    private void Start()
-    {
-        if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
-        if (GameControl.control.isBeingLoaded)
-        {
-            playerObj.transform.position = new Vector3(PosX, PosY, PosZ);
-            GameControl.control.isBeingLoaded = false;
-        }
-    }
-
     //happens before start()
     void Awake()
     {
-        if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
         if (control == null) //check if control already exists and create accordingly
         {
             DontDestroyOnLoad(gameObject);
@@ -65,7 +55,7 @@ public class GameControl : MonoBehaviour
         PlayerData data = new PlayerData(); //create new instance of playerdata and set the variables based on the game at save
         data.noCollected = noCollected;
         data.collectionPercentage = collectionPercentage;
-        data.PosX = playerObj.transform.position.x;
+        data.PosX = playerObj.transform.position.x; //getting data of player position in x, y & z
         data.PosY = playerObj.transform.position.y;
         data.PosZ = playerObj.transform.position.z;
 
@@ -83,11 +73,12 @@ public class GameControl : MonoBehaviour
             file.Close();
             noCollected = data.noCollected;
             collectionPercentage = data.collectionPercentage;
-            PosX = data.PosX;
+            PosX = data.PosX; //loading the stored data for the player position x,y,z
             PosY = data.PosY;
             PosZ = data.PosZ;
-            isBeingLoaded = true;
-            SceneManager.LoadScene(1);
+            //isBeingLoaded = true; <- this didn't work
+            //SceneManager.LoadScene(sceneNumber); to be used later
+            playerObj.transform.position = new Vector3(PosX, PosY, PosZ); //this doesn't move the player
         }
     }
 
@@ -101,7 +92,7 @@ public class PlayerData
     public int noCollected;
     public int noOfCollectables;
     public float PosX, PosY, PosZ;
-    public int sceneNumber;
+    //public int sceneNumber; to be used later
     //player level possibly - public int SceneID;
     //which paintings have been collected, so they cant be collected again
 
@@ -113,6 +104,6 @@ public class PlayerData
         PosX = 0f;
         PosY = -1.5f;
         PosZ = 0f;
-        sceneNumber = 1;
+        //sceneNumber = 1; to be used later
     }
 }
