@@ -6978,7 +6978,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KillboxMenu: {fileID: 35623249}
-  Player: {fileID: 1922536555}
 --- !u!114 &1324214416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10552,7 +10551,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   KillboxMenu: {fileID: 35623249}
-  Player: {fileID: 1922536555}
 --- !u!1 &1690872814
 GameObject:
   m_ObjectHideFlags: 0
@@ -11922,11 +11920,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
---- !u!1 &1922536555 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6970683327724896034, guid: 31647ada27dddad4b947b1558636a276, type: 3}
-  m_PrefabInstance: {fileID: 7817613831189328383}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1922536556 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7779694721709368728, guid: 31647ada27dddad4b947b1558636a276, type: 3}
@@ -13833,7 +13826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7817613831913653655, guid: 31647ada27dddad4b947b1558636a276, type: 3}
       propertyPath: sprintSpeed
-      value: 25
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8179420250542175523, guid: 31647ada27dddad4b947b1558636a276, type: 3}
       propertyPath: m_IsTrigger

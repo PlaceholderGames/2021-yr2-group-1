@@ -9,14 +9,14 @@ using UnityEngine.SceneManagement;
 public class Killbox : MonoBehaviour
 {
     public GameObject KillboxMenu;
-  
+    
     
 
    
     // This when attatched to an object, causes a scene change based on the number where the 0 is
     void OnTriggerEnter(Collider other)
     {
-        
+       
         //Makes cursor visible and unlocks
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
@@ -38,7 +38,7 @@ public class Killbox : MonoBehaviour
         KillboxMenu.SetActive(false);
         //Sets time to tick at normal speed
         Time.timeScale = 1f;
-        SceneManager.LoadScene(1);
+       // SceneManager.LoadScene(1);
         
     }
 }
