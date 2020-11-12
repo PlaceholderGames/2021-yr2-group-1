@@ -73,6 +73,9 @@ public class PlayerData
     public double collectionPercentage;
     public int noCollected;
     public int noOfCollectables;
+    //player position
+    //player level
+    //which paintings have been collected, so they cant be collected again
 
     public PlayerData()
     {
