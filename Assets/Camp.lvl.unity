@@ -1408,6 +1408,10 @@ PrefabInstance:
       propertyPath: dot
       value: 
       objectReference: {fileID: 7817613831189328385}
+    - target: {fileID: 3707355730534174788, guid: 0e47b32816e874343b407827ce1b1554, type: 3}
+      propertyPath: itemID
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3707355730534174814, guid: 0e47b32816e874343b407827ce1b1554, type: 3}
       propertyPath: m_Name
       value: Painting (1)
@@ -12289,6 +12293,10 @@ PrefabInstance:
       propertyPath: dot
       value: 
       objectReference: {fileID: 7817613831189328385}
+    - target: {fileID: 3707355730534174788, guid: 0e47b32816e874343b407827ce1b1554, type: 3}
+      propertyPath: itemID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3707355730534174814, guid: 0e47b32816e874343b407827ce1b1554, type: 3}
       propertyPath: m_Name
       value: Painting (2)
@@ -13392,6 +13400,10 @@ PrefabInstance:
       propertyPath: cross
       value: 
       objectReference: {fileID: 7817613831189328384}
+    - target: {fileID: 3707355730534174788, guid: 0e47b32816e874343b407827ce1b1554, type: 3}
+      propertyPath: itemID
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3707355730534174814, guid: 0e47b32816e874343b407827ce1b1554, type: 3}
       propertyPath: m_Name
       value: Painting
@@ -13586,6 +13598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameControl
       objectReference: {fileID: 0}
+    - target: {fileID: 8885220233946063729, guid: 39bd71d6b09169742b14932de0778a94, type: 3}
+      propertyPath: secondHalf
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8885220233946063734, guid: 39bd71d6b09169742b14932de0778a94, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60.211212
@@ -13596,7 +13612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8885220233946063734, guid: 39bd71d6b09169742b14932de0778a94, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 42.452187
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 8885220233946063734, guid: 39bd71d6b09169742b14932de0778a94, type: 3}
       propertyPath: m_LocalRotation.x

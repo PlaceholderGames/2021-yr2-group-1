@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         //Instantiates controller
         controller = GetComponent<CharacterController>();
-        torch.SetActive(false);
+        torch.SetActive(false); 
     }
 
     // Update is called once per frame
