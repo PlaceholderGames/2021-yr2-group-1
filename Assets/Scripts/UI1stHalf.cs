@@ -18,7 +18,7 @@ public class UI1stHalf : MonoBehaviour
     {
         for (int i = 0; i < GameControl.control.firstHalf; i++)
         {
-            roomCompletion1.text = i + 1 + " - \n" + GameControl.control.noCollected[i] + " / " + GameControl.control.roomCollectables[i] + "\n" + GameControl.control.roomPercentage[i] + "\n";
+            roomCompletion1.text = i + 1 + "- \n" + GameControl.control.noCollected[i] + " / " + GameControl.control.roomCollectables[i] + "\n" + GameControl.control.roomPercentage[i] + "\n";
         }
     }
 }
