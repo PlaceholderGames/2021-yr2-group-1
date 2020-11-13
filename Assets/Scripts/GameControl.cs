@@ -38,9 +38,9 @@ public class GameControl : MonoBehaviour
         //Percentage Calculation
         for (int i = 0; i < noOfRooms; i++)
         {
-            roomPercentage[i] = (double)noCollected[i] / (double)noOfCollectables * 100;
+            roomPercentage[i] = (double)noCollected[i] / (double)roomCollectables[i] * 100;
         }
-        collectionPercentage = roomPercentage[0] + roomPercentage[1];
+        collectionPercentage = (roomPercentage[0] + roomPercentage[1]) / noOfRooms;
         //UnityEngine.Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z);
     }
 

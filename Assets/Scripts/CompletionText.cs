@@ -15,6 +15,6 @@ public class CompletionText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        percentage.text = "% - \n" + GameControl.control.collectionPercentage;
+        percentage.text = "%- \n" + GameControl.control.collectionPercentage;
     }
 }
