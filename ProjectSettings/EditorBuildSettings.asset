@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Camp.lvl.unity
     guid: aeaae6bf22c435d408341fb4a2d8a73f
   - enabled: 1
-    path: Assets/Templeupload/TempleV2.unity
-    guid: 09b55f5ed2aecee4f81df65ffb504e94
+    path: Assets/TempleUpdated.unity
+    guid: c4418eebd2481c64c81032b808369c23
   m_configObjects: {}
