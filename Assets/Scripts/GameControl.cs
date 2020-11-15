@@ -12,7 +12,8 @@ using UnityEngine.SceneManagement;
 public class GameControl : MonoBehaviour
 {
     public static GameControl control; //create instance of gamecontrol class
-    private GameObject playerObj = null;
+    public GameObject playerObj = null; //reference to player
+    public CharacterController playerController; //reference to player controller
     public double collectionPercentage; //the variable we want to save/load
 
     //Arrays for storing gamedata
@@ -28,9 +29,11 @@ public class GameControl : MonoBehaviour
     public int secondHalf = noOfRooms;
     public int roomNumber;
 
+    //floats for storing player location and rotation
     public float PosX, PosY, PosZ;
+    public float RotX, RotY, RotZ;
     public int sceneNumber = 1;
-    bool isBeingLoaded = false;
+    
     Scene currentScene;
 
     public void Update()
@@ -41,17 +44,11 @@ public class GameControl : MonoBehaviour
             roomPercentage[i] = (double)noCollected[i] / (double)roomCollectables[i] * 100;
         }
         collectionPercentage = (roomPercentage[0] + roomPercentage[1]) / noOfRooms;
-        //UnityEngine.Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z);
+        //UnityEngine.Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z); //debug no longer needed
     }
 
     private void Start()
     {
-        if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
-        if (GameControl.control.isBeingLoaded)
-        {
-            playerObj.transform.position = new Vector3(PosX, PosY, PosZ);
-            GameControl.control.isBeingLoaded = false;
-        }
         currentScene = SceneManager.GetActiveScene();
         if (currentScene.name == "Camp.lvl")
         {
@@ -101,6 +98,10 @@ public class GameControl : MonoBehaviour
         data.PosX = playerObj.transform.position.x;
         data.PosY = playerObj.transform.position.y;
         data.PosZ = playerObj.transform.position.z;
+        data.RotX = playerObj.transform.eulerAngles.x;
+        data.RotY = playerObj.transform.eulerAngles.y;
+        data.RotZ = playerObj.transform.eulerAngles.z;
+
 
         bf.Serialize(file, data); //translate the data into binary and save to file
         file.Close();
@@ -119,8 +120,17 @@ public class GameControl : MonoBehaviour
             PosX = data.PosX;
             PosY = data.PosY;
             PosZ = data.PosZ;
-            isBeingLoaded = true;
-            SceneManager.LoadScene(1);
+            RotX = data.RotX;
+            RotY = data.RotY;
+            RotZ = data.RotZ;
+
+            //disable controller, reposition player then re-enable controller
+            playerController.enabled = false;
+            playerObj.transform.position = new Vector3(PosX, (PosY + 0.5f), PosZ);
+            playerObj.transform.eulerAngles = new Vector3(RotX, RotY, RotZ);
+            playerController.enabled = true;
+
+            SceneManager.LoadScene(1); //need to change to load appropriate scene
         }
     }
 
@@ -136,11 +146,12 @@ public class PlayerData
     public bool[] isCollected;
     public const int noOfCollectables = 6;
     public float PosX, PosY, PosZ;
+    public float RotX, RotY, RotZ;
     public int sceneNumber;
     //player level possibly - public int SceneID;
     //which paintings have been collected, so they cant be collected again
 
-    public PlayerData()
+    public PlayerData() // default constructor
     {
         collectionPercentage = 0;
         PosX = 0f;
