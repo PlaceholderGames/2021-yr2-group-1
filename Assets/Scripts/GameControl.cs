@@ -96,8 +96,8 @@ public class GameControl : MonoBehaviour
         PlayerData data = new PlayerData(); //create new instance of playerdata and set the variables based on the game at save
         data.noCollected = noCollected;
         data.collectionPercentage = collectionPercentage;
-        data.roomPercentage[noOfRooms] = roomPercentage[noOfRooms];
-        data.isCollected[noOfCollectables] = isCollected[noOfCollectables];
+        data.roomPercentage = roomPercentage;
+        data.isCollected = isCollected;
         data.PosX = playerObj.transform.position.x;
         data.PosY = playerObj.transform.position.y;
         data.PosZ = playerObj.transform.position.z;
