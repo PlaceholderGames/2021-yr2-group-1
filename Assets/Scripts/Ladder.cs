@@ -4,47 +4,43 @@ using UnityEngine;
 
 public class Ladder : MonoBehaviour
 {
-    public CharacterController playerController;
+    public CharacterController characterController;
     public GameObject Player;
     private bool IsTrigger = false;
 
-    void OnTriggerEnter(Collider other)
-    {
 
-        if (other.gameObject.tag == "Player")
+    // Once collision happens disable playercontroller and set IsTrigger to True
+        void OnTriggerEnter(Collider other)
         {
-            playerController.enabled = false;
-            IsTrigger = true;
-        }
-        
-        
-    }
+       
+                Debug.Log("Enter");
+        characterController.enabled = false;
+                IsTrigger = true;
+
+          }
+
+
+    // Once collision Stopss enable playercontroller and set IsTrigger to False
     void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
         {
+        IsTrigger = false;
             Debug.Log("Exit");
-            IsTrigger = false;
+        characterController.enabled = true;
         }
-    }
 
-    // Update is called once per frame
+// Every frame check for the state of IsTrigger
     void Update()
     {
         if (IsTrigger == true)
         {
-
-
-            Player.transform.Translate(0, 0.01f, 0, Space.World);
-
+            if (Input.GetKeyDown(KeyCode.W))
+                Player.transform.Translate(0, 0.2f, 0, Space.World);
         }
+        
         if (IsTrigger == false)
         {
-            playerController.enabled = true;
-            Player.transform.Translate(0, 0, 0, Space.World);
+            characterController.enabled = true;
         }
     }
-
-
 }
 
