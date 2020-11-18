@@ -6981,6 +6981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3334c6c5c9cb9314891dbb4ee00ec6a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObj: {fileID: 8885220233670259524}
   KillboxMenu: {fileID: 35623249}
 --- !u!114 &1324214416
 MonoBehaviour:
@@ -10428,6 +10429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3334c6c5c9cb9314891dbb4ee00ec6a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObj: {fileID: 8885220233670259524}
   KillboxMenu: {fileID: 35623249}
 --- !u!1 &1690872814
 GameObject:
@@ -13736,3 +13738,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8885220233946063734, guid: 39bd71d6b09169742b14932de0778a94, type: 3}
   m_PrefabInstance: {fileID: 8885220233670259522}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8885220233670259524 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8885220233946063729, guid: 39bd71d6b09169742b14932de0778a94, type: 3}
+  m_PrefabInstance: {fileID: 8885220233670259522}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa2d7b378e4279340a63cc6886ff6ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
