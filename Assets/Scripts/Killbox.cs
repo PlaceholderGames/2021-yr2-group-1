@@ -7,12 +7,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Killbox : MonoBehaviour
-{
+{       
+    public GameControl gameObj;
     public GameObject KillboxMenu;
     
-    
 
-   
+
+
     // This when attatched to an object, causes a scene change based on the number where the 0 is
     void OnTriggerEnter(Collider other)
     {
@@ -32,7 +33,7 @@ public class Killbox : MonoBehaviour
 
     public void loadLevel1()
     {
-        
+        gameObj.Load();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         KillboxMenu.SetActive(false);
