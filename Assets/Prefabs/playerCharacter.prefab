@@ -734,12 +734,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22170352b12d72345b5f633672296d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  sprintSpeed: 8
+  moveSpeed: 8
+  sprintSpeed: 15
   jumpForce: 10
   verticalVelocity: 0
   controller: {fileID: 7817613831913653653}
-  gravityScale: 22
+  gravityScale: 30
   anim: {fileID: 4402035496223129570}
   torch: {fileID: 7817613831326375676}
   torchToggle: 0

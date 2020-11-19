@@ -15,6 +15,7 @@ public class GameControl : MonoBehaviour
     public GameObject playerObj = null; //reference to player
     public CharacterController playerController; //reference to player controller
     public double collectionPercentage; //the variable we want to save/load
+    public PauseMenu pauseMenu;
 
     //Arrays for storing gamedata
     public double[] roomPercentage = new double[noOfRooms];
@@ -32,10 +33,8 @@ public class GameControl : MonoBehaviour
     //floats for storing player location and rotation
     public float PosX, PosY, PosZ;
     public float RotX, RotY, RotZ;
-    public int sceneNumber = 1;
+    private Scene currentScene;
     
-    Scene currentScene;
-
     public void Update()
     {
         //Percentage Calculation
@@ -102,7 +101,6 @@ public class GameControl : MonoBehaviour
         data.RotY = playerObj.transform.eulerAngles.y;
         data.RotZ = playerObj.transform.eulerAngles.z;
 
-
         bf.Serialize(file, data); //translate the data into binary and save to file
         file.Close();
     }
@@ -130,7 +128,16 @@ public class GameControl : MonoBehaviour
             playerObj.transform.eulerAngles = new Vector3(RotX, RotY, RotZ);
             playerController.enabled = true;
 
-            SceneManager.LoadScene(1); //need to change to load appropriate scene
+            //setting the game to un pause
+            pauseMenu.resumeGame();
+
+            /*
+            if (currentScene != SceneManager.GetActiveScene())
+            {
+                SceneManager.LoadScene(1);//need to change to load appropriate scene
+            }
+            */
+            
         }
     }
 
@@ -147,7 +154,6 @@ public class PlayerData
     public const int noOfCollectables = 6;
     public float PosX, PosY, PosZ;
     public float RotX, RotY, RotZ;
-    public int sceneNumber;
     //player level possibly - public int SceneID;
     //which paintings have been collected, so they cant be collected again
 
@@ -157,6 +163,5 @@ public class PlayerData
         PosX = 0f;
         PosY = -1.5f;
         PosZ = 0f;
-        sceneNumber = 1;
     }
 }
