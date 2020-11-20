@@ -7,6 +7,7 @@ TagManager:
   - Spawnpoint
   - Rope
   - Fire
+  - Ladder
   layers:
   - Default
   - TransparentFX
