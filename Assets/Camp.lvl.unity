@@ -106,15 +106,15 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 1
     agentHeight: 2
-    agentSlope: 45
+    agentSlope: 36.5
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.33333334
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -504,6 +504,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1464,7 +1472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2121115777601841395, guid: e334e6614ad50f749b0a37528784c614, type: 3}
       propertyPath: m_RootOrder
-      value: 76
+      value: 77
       objectReference: {fileID: 0}
     - target: {fileID: 2121115777601841395, guid: e334e6614ad50f749b0a37528784c614, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1678,7 +1686,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 57
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1720,6 +1728,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2003,7 +2019,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 67
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2398,7 +2414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 66
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2498,6 +2514,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: desert_palm001 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.1
@@ -2562,6 +2586,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2628,6 +2660,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stool01v1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1793340289879562, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793340289879562, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4416666560069214, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
       propertyPath: m_LocalPosition.x
       value: 57.63
@@ -2684,6 +2724,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 3.1823
       objectReference: {fileID: 0}
+    - target: {fileID: 5508263740736306219, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508263740736306219, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
 --- !u!1001 &430983049
@@ -2696,6 +2744,14 @@ PrefabInstance:
     - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
       propertyPath: m_Name
       value: desert_tent004 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4073377612993484, guid: 89b866526228b604da4dd702464c91e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2792,7 +2848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 52
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2834,6 +2890,14 @@ PrefabInstance:
     - target: {fileID: 1026669413012722, guid: 57d3e693aabffc0469483a7ea0e6d1e5, type: 3}
       propertyPath: m_Name
       value: Table01v2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026669413012722, guid: 57d3e693aabffc0469483a7ea0e6d1e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1026669413012722, guid: 57d3e693aabffc0469483a7ea0e6d1e5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4388138100929920, guid: 57d3e693aabffc0469483a7ea0e6d1e5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2891,6 +2955,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 2.9917474
       objectReference: {fileID: 0}
+    - target: {fileID: 2599617486170202195, guid: 57d3e693aabffc0469483a7ea0e6d1e5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2599617486170202195, guid: 57d3e693aabffc0469483a7ea0e6d1e5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57d3e693aabffc0469483a7ea0e6d1e5, type: 3}
 --- !u!1001 &439317640
@@ -2930,7 +3002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 55
+      value: 57
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3424,6 +3496,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: desert_palm001 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.25
@@ -3584,6 +3664,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: desert_palm001
       objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.1
@@ -3668,6 +3756,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table02
       objectReference: {fileID: 0}
+    - target: {fileID: 1497028668054882, guid: 5d17cce7704ff0c44985b9f2b7c1f930, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497028668054882, guid: 5d17cce7704ff0c44985b9f2b7c1f930, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4843220351572358, guid: 5d17cce7704ff0c44985b9f2b7c1f930, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.603439
@@ -3723,6 +3819,14 @@ PrefabInstance:
     - target: {fileID: 4843220351572358, guid: 5d17cce7704ff0c44985b9f2b7c1f930, type: 3}
       propertyPath: m_LocalScale.z
       value: 3.5721002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802758349413567132, guid: 5d17cce7704ff0c44985b9f2b7c1f930, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5802758349413567132, guid: 5d17cce7704ff0c44985b9f2b7c1f930, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d17cce7704ff0c44985b9f2b7c1f930, type: 3}
@@ -3832,6 +3936,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4443,6 +4555,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: desert_tent003
       objectReference: {fileID: 0}
+    - target: {fileID: 1921437289434642, guid: d5b19a5de9730bd4e92feabc20b22257, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1921437289434642, guid: d5b19a5de9730bd4e92feabc20b22257, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4264342416064672, guid: d5b19a5de9730bd4e92feabc20b22257, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.9
@@ -4546,7 +4666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2121115777601841395, guid: e334e6614ad50f749b0a37528784c614, type: 3}
       propertyPath: m_RootOrder
-      value: 74
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 2121115777601841395, guid: e334e6614ad50f749b0a37528784c614, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4706,7 +4826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 69
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4850,7 +4970,7 @@ Transform:
   m_LocalScale: {x: 11.197006, y: 0.2, z: 7.6059976}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 54
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &855492133
 GameObject:
@@ -5180,7 +5300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2121115777601841395, guid: e334e6614ad50f749b0a37528784c614, type: 3}
       propertyPath: m_RootOrder
-      value: 77
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 2121115777601841395, guid: e334e6614ad50f749b0a37528784c614, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5245,7 +5365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 65
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5287,6 +5407,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5436,7 +5564,7 @@ Transform:
   m_LocalScale: {x: 0.35026613, y: 0.1808625, z: 1.8152702}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 79
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: -0.455, y: -75.781, z: 3.528}
 --- !u!1 &977727891
 GameObject:
@@ -5543,6 +5671,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6297,7 +6433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 62
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6504,6 +6640,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stool01v1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1793340289879562, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793340289879562, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4416666560069214, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
       propertyPath: m_LocalPosition.x
       value: 58.02
@@ -6559,6 +6703,14 @@ PrefabInstance:
     - target: {fileID: 4416666560069214, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.1823
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508263740736306219, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508263740736306219, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
@@ -6711,6 +6863,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: desert_tent004 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4073377612993484, guid: 89b866526228b604da4dd702464c91e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35
@@ -6827,7 +6987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 70
+      value: 71
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6872,7 +7032,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1583740400786812, guid: 13ba38a56e5ac194b8ff91a886d11881, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583740400786812, guid: 13ba38a56e5ac194b8ff91a886d11881, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4864617245429566, guid: 13ba38a56e5ac194b8ff91a886d11881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7083,6 +7247,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: desert_palm001 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
       value: 90.8
@@ -7174,7 +7346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 53
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7216,6 +7388,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7447,6 +7627,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: desert_palm001 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.79
@@ -7511,6 +7699,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7671,6 +7867,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8507,6 +8711,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stool01v1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1793340289879562, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793340289879562, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4416666560069214, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
       propertyPath: m_LocalPosition.x
       value: 54.28
@@ -8562,6 +8774,14 @@ PrefabInstance:
     - target: {fileID: 4416666560069214, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.1823
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508263740736306219, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508263740736306219, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
@@ -8728,7 +8948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 60
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8962,6 +9182,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: desert_palm001 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.6
@@ -9121,6 +9349,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9300,7 +9536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 68
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9369,7 +9605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 71
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9411,6 +9647,22 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 06e14e2567d994e0b942d2e9ed9c92a7, type: 3}
       propertyPath: m_Name
       value: Torch
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 06e14e2567d994e0b942d2e9ed9c92a7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 06e14e2567d994e0b942d2e9ed9c92a7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 06e14e2567d994e0b942d2e9ed9c92a7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 06e14e2567d994e0b942d2e9ed9c92a7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06e14e2567d994e0b942d2e9ed9c92a7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9845,7 +10097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2121115777601841395, guid: e334e6614ad50f749b0a37528784c614, type: 3}
       propertyPath: m_RootOrder
-      value: 78
+      value: 79
       objectReference: {fileID: 0}
     - target: {fileID: 2121115777601841395, guid: e334e6614ad50f749b0a37528784c614, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9910,7 +10162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 63
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9952,6 +10204,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10044,7 +10304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 64
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10345,7 +10605,7 @@ Transform:
   m_LocalScale: {x: 0.35026613, y: 0.1808625, z: 1.8152702}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 59
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 57.33, z: 0}
 --- !u!1001 &1649822229
 PrefabInstance:
@@ -10357,6 +10617,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10745,6 +11013,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: desert_palm001 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.35
@@ -10840,7 +11116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2121115777601841395, guid: e334e6614ad50f749b0a37528784c614, type: 3}
       propertyPath: m_RootOrder
-      value: 73
+      value: 74
       objectReference: {fileID: 0}
     - target: {fileID: 2121115777601841395, guid: e334e6614ad50f749b0a37528784c614, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11013,6 +11289,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: desert_palm001 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.95
@@ -11077,6 +11361,14 @@ PrefabInstance:
     - target: {fileID: 1583740400786812, guid: 13ba38a56e5ac194b8ff91a886d11881, type: 3}
       propertyPath: m_Name
       value: desert_tent002 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583740400786812, guid: 13ba38a56e5ac194b8ff91a886d11881, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583740400786812, guid: 13ba38a56e5ac194b8ff91a886d11881, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4864617245429566, guid: 13ba38a56e5ac194b8ff91a886d11881, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11168,6 +11460,14 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e83e354153bb425439c2d1490062e850, type: 3}
       propertyPath: m_Name
       value: modelBonfire
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e83e354153bb425439c2d1490062e850, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e83e354153bb425439c2d1490062e850, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e83e354153bb425439c2d1490062e850, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11459,7 +11759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 56
+      value: 58
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11750,7 +12050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 72
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11792,6 +12092,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12097,6 +12405,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stool01v1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1793340289879562, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793340289879562, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4416666560069214, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
       propertyPath: m_LocalPosition.x
       value: 51.07
@@ -12153,6 +12469,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 3.1823
       objectReference: {fileID: 0}
+    - target: {fileID: 5508263740736306219, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508263740736306219, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
 --- !u!1001 &1959634094
@@ -12165,6 +12489,14 @@ PrefabInstance:
     - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
       propertyPath: m_Name
       value: desert_tent004 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4073377612993484, guid: 89b866526228b604da4dd702464c91e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12234,6 +12566,14 @@ PrefabInstance:
     - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
       propertyPath: m_Name
       value: desert_tent004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4073377612993484, guid: 89b866526228b604da4dd702464c91e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12399,7 +12739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 61
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12549,6 +12889,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: desert_palm001 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.06
@@ -12697,6 +13045,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: desert_palm001 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
       value: 68.2
@@ -12761,6 +13117,14 @@ PrefabInstance:
     - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_Name
       value: desert_palm001 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678646192460628, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923199065283446, guid: dd466685092dcbe4dac624355fc9d843, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12919,6 +13283,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stool01v1
       objectReference: {fileID: 0}
+    - target: {fileID: 1793340289879562, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1793340289879562, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4416666560069214, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
       propertyPath: m_LocalPosition.x
       value: 54.69
@@ -12975,6 +13347,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 3.1823
       objectReference: {fileID: 0}
+    - target: {fileID: 5508263740736306219, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5508263740736306219, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b4e64b68be2d404f8d503ed5ca46526, type: 3}
 --- !u!1001 &2120593408
@@ -13014,7 +13394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_RootOrder
-      value: 58
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 6786704563919474195, guid: ff0b0a3d7ae7a9e4f8505795785ad853, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13056,6 +13436,14 @@ PrefabInstance:
     - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
       propertyPath: m_Name
       value: desert_tent004 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237088671730922, guid: 89b866526228b604da4dd702464c91e2, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4073377612993484, guid: 89b866526228b604da4dd702464c91e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13383,7 +13771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2121115777601841395, guid: e334e6614ad50f749b0a37528784c614, type: 3}
       propertyPath: m_RootOrder
-      value: 75
+      value: 76
       objectReference: {fileID: 0}
     - target: {fileID: 2121115777601841395, guid: e334e6614ad50f749b0a37528784c614, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13518,6 +13906,14 @@ PrefabInstance:
     - target: {fileID: 2475574654413815554, guid: 1265e49ef93d5b648a94cdd4718d1d8a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2725165361757513657, guid: 1265e49ef93d5b648a94cdd4718d1d8a, type: 3}
+      propertyPath: m_Radius
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2725165361757513657, guid: 1265e49ef93d5b648a94cdd4718d1d8a, type: 3}
+      propertyPath: m_AutoRepath
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2959096559850743224, guid: 1265e49ef93d5b648a94cdd4718d1d8a, type: 3}
       propertyPath: m_Name
