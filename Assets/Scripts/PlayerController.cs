@@ -146,11 +146,15 @@ public class PlayerController : MonoBehaviour
         //gets the player input for w & a and applies them to a float called forward
         float forward = Input.GetAxis("Vertical");
 
+        float up = moveDirection.y;
+
         //setting the float parameters on the anim controller to be set by strafe and forward
         anim.SetFloat("Forward", forward);
         anim.SetFloat("Right", strafe);
+        anim.SetFloat("Up", up);
 
         // add in toggle for animation update
         anim.SetBool("torchTriggered", torchToggle);
+        anim.SetBool("climbingTriggered", ladderToggle);
     }
 }
