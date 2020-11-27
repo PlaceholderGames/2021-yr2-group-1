@@ -24,8 +24,8 @@ public class GameControl : MonoBehaviour
     public bool[] isCollected = new bool[noOfCollectables];
 
     //Ints for storing room data
-    public const int noOfCollectables = 6;
-    public const int noOfRooms = 2;
+    public const int noOfCollectables = 7;
+    public const int noOfRooms = 3;
     public int firstHalf = noOfRooms / 2;
     public int secondHalf = noOfRooms;
     public int roomNumber;
@@ -49,18 +49,18 @@ public class GameControl : MonoBehaviour
     private void Start()
     {
         currentScene = SceneManager.GetActiveScene();
-        if (currentScene.name == "Camp.lvl")
+        if (currentScene.name == "Camp")
         {
             roomNumber = 0;
         }
-        else if (currentScene.name == "TempleUpdated.lvl")
+        else if (currentScene.name == "TempleUpdated")
         {
             roomNumber = 1;
         }
-        roomCollectables[0] = 3;
-        roomCollectables[1] = 3;
-        noCollected[0] = 0;
-        noCollected[1] = 0;
+        else if (currentScene.name == "Dragon")
+        {
+            roomNumber = 2;
+        }
     }
 
     //happens before start()
@@ -151,7 +151,7 @@ public class PlayerData
     public int[] noCollected;
     public double[] roomPercentage;
     public bool[] isCollected;
-    public const int noOfCollectables = 6;
+    public const int noOfCollectables = 7;
     public float PosX, PosY, PosZ;
     public float RotX, RotY, RotZ;
     //player level possibly - public int SceneID;

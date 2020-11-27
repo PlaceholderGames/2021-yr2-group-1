@@ -42,18 +42,6 @@ public class PlayerController : MonoBehaviour
             ladderCollision = true;
         }
     }
-    //Checks the conditions every frame the player is within the ladder collision box
-    void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "Ladder" && ladderToggle == false && Input.GetKeyDown(KeyCode.E))
-        {
-            ladderToggle = true;
-        }
-        else if (other.gameObject.tag == "Ladder" && ladderToggle == true && Input.GetKeyDown(KeyCode.E))
-        {
-            ladderToggle = false;
-        }
-    }
     void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Ladder")
@@ -119,21 +107,32 @@ public class PlayerController : MonoBehaviour
                 torch.SetActive(false);
             }
         }
-        else if (ladderToggle == true)
+        if (ladderCollision == true)
         {
-            //Allows for input of all cardinal directions and cominations of them
-            moveDirection = (transform.up * Input.GetAxis("Vertical")) + (transform.right * Input.GetAxis("Horizontal"));
-            //Stops speed being doubled on diagonal input
-            moveDirection = moveDirection.normalized * moveSpeed;
-            //Checks if shift is held and changes speed
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetMouseButtonDown(1) && ladderToggle == false)
             {
-                moveSpeed = sprintSpeed/2;
+                ladderToggle = true;
             }
-            //Checks if shift is not held and reverts speed to default
-            else if (!Input.GetKey(KeyCode.LeftShift))
+            else if (Input.GetMouseButtonDown(1) && ladderToggle == true)
             {
-                moveSpeed = 5.0f;
+                ladderToggle = false;
+            }
+            if (ladderToggle == true)
+            {
+                //Allows for input of all cardinal directions and cominations of them
+                moveDirection = (transform.up * Input.GetAxis("Vertical")) + (transform.right * Input.GetAxis("Horizontal"));
+                //Stops speed being doubled on diagonal input
+                moveDirection = moveDirection.normalized * moveSpeed;
+                //Checks if shift is held and changes speed
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    moveSpeed = sprintSpeed / 2;
+                }
+                //Checks if shift is not held and reverts speed to default
+                else if (!Input.GetKey(KeyCode.LeftShift))
+                {
+                    moveSpeed = 5.0f;
+                }
             }
         }
 
