@@ -2,45 +2,51 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour
+public class DestroyableObject : MonoBehaviour
 {
-    public bool isOpen;
-    public bool isOpenable;
-    public GameObject door;
-    private float currentRotation;
+    public bool isDestructable;
+    public bool torchRequired;
 
     public GameObject dot;
     public GameObject cross;
 
+    public PlayerController playerControl;
+
+    // Start is called before the first frame update
     void Start()
     {
         cross.SetActive(true);
         dot = GameObject.Find("dot");
         cross = GameObject.Find("cross");
-        currentRotation = door.transform.eulerAngles.y + 90;
         cross.SetActive(false);
     }
 
+    // Update is called once per frame
     void Update()
     {
-        if (isOpenable == true && isOpen == false && Input.GetMouseButton(1))
+        if (isDestructable == true && torchRequired == false && Input.GetMouseButton(1))
         {
-            //Moves the door by 5 units on Z
-            door.transform.position += new Vector3(0, 0, 5);
-            //Rotates the door 90 degrees based on the current rotation
-            door.transform.rotation = Quaternion.Euler(0, currentRotation, 0);
+            Destroy(gameObject);
             cross.SetActive(false);
             dot.SetActive(true);
-            isOpen = true;
+        }
+        else if (isDestructable == true && torchRequired == true && Input.GetMouseButton(1))
+        {
+            if(playerControl.torchToggle == true)
+            {
+                Destroy(gameObject);
+                cross.SetActive(false);
+                dot.SetActive(true);
+            }
         }
     }
 
     void OnTriggerEnter(Collider collision)
     {
         //Checks if the player is within the collision trigger of the object
-        if (collision.gameObject.name.Equals("playerCharacter") && isOpen == false)
+        if (collision.gameObject.name.Equals("playerCharacter") && isDestructable == false)
         {
-            isOpenable = true;
+            isDestructable = true;
             cross.SetActive(true);
             dot.SetActive(false);
         }
@@ -51,7 +57,7 @@ public class Door : MonoBehaviour
         //Checks if the player is within the collision trigger of the object
         if (collision.gameObject.name.Equals("playerCharacter"))
         {
-            isOpenable = false;
+            isDestructable = false;
             cross.SetActive(false);
             dot.SetActive(true);
         }

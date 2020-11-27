@@ -43,4 +43,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2d7b378e4279340a63cc6886ff6ace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerObj: {fileID: 0}
+  playerController: {fileID: 0}
   collectionPercentage: 0
+  pauseMenu: {fileID: 0}
+  roomPercentage:
+  - 0
+  - 0
+  - 0
+  noCollected: 000000000000000000000000
+  roomCollectables: 030000000300000001000000
+  isCollected: 00000000000000
+  firstHalf: 1
+  secondHalf: 2
+  roomNumber: 0
+  PosX: 0
+  PosY: 0
+  PosZ: 0
+  RotX: 0
+  RotY: 0
+  RotZ: 0

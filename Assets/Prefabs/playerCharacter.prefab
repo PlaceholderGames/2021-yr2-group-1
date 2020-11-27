@@ -739,7 +739,10 @@ MonoBehaviour:
   jumpForce: 10
   verticalVelocity: 0
   controller: {fileID: 7817613831913653653}
+  moveDirection: {x: 0, y: 0, z: 0}
   gravityScale: 30
+  ladderCollision: 0
+  ladderToggle: 0
   anim: {fileID: 4402035496223129570}
   torch: {fileID: 7817613831326375676}
   torchToggle: 0
