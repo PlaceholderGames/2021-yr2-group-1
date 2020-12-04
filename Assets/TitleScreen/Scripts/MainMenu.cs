@@ -9,7 +9,12 @@ public class MainMenu : MonoBehaviour
     public bool isStart;
     public bool isQuit;
 
- 
+    void Awake()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
     void OnMouseUp()
     {
         if (isStart)
