@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/K_Temple_Room/K_Temple_Room 1.unity
     guid: 623824f72996ca644aa3615626f2fa34
+  - enabled: 1
+    path: Assets/Scenes/Room3.unity
+    guid: 50308a5eeedb07b4faa8a7146f76b8e2
   m_configObjects: {}
