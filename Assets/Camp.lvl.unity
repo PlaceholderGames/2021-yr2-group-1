@@ -12449,8 +12449,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3707355730534174788, guid: 0e47b32816e874343b407827ce1b1554, type: 3}
       propertyPath: collectionAllowed
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3707355730534174788, guid: 0e47b32816e874343b407827ce1b1554, type: 3}
+      propertyPath: dot
+      value: 
+      objectReference: {fileID: 7817613831189328384}
+    - target: {fileID: 3707355730534174788, guid: 0e47b32816e874343b407827ce1b1554, type: 3}
+      propertyPath: cross
+      value: 
+      objectReference: {fileID: 7817613831189328385}
     - target: {fileID: 3707355730534174814, guid: 0e47b32816e874343b407827ce1b1554, type: 3}
       propertyPath: m_Name
       value: Painting
@@ -13915,6 +13923,16 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1428518578471743989, guid: 31647ada27dddad4b947b1558636a276, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 31647ada27dddad4b947b1558636a276, type: 3}
+--- !u!1 &7817613831189328384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8194819679148021640, guid: 31647ada27dddad4b947b1558636a276, type: 3}
+  m_PrefabInstance: {fileID: 7817613831189328383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7817613831189328385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 323031808932526763, guid: 31647ada27dddad4b947b1558636a276, type: 3}
+  m_PrefabInstance: {fileID: 7817613831189328383}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8885220233670259522
 PrefabInstance:
   m_ObjectHideFlags: 0
