@@ -9,10 +9,14 @@ using UnityEngine.SceneManagement;
 public class Killbox : MonoBehaviour
 {       
     public GameControl gameObj;
-    public GameObject KillboxMenu;
-    
+    public GameObject killboxMenu;
 
 
+    void Awake()
+    {
+        if (gameObj == null) gameObj = FindObjectOfType<GameControl>();
+        if (killboxMenu == null) killboxMenu = GameObject.Find("playerCharacter/KillboxMenu/killboxCanvas");
+    }
 
     // This when attatched to an object, causes a scene change based on the number where the 0 is
     void OnTriggerEnter(Collider other)
@@ -21,7 +25,7 @@ public class Killbox : MonoBehaviour
         //Makes cursor visible and unlocks
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        KillboxMenu.SetActive(true);
+        killboxMenu.SetActive(true);
         //Pauses time within engine
         Time.timeScale = 0f;
     }
@@ -36,10 +40,9 @@ public class Killbox : MonoBehaviour
         gameObj.Load();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        KillboxMenu.SetActive(false);
+        killboxMenu.SetActive(false);
         //Sets time to tick at normal speed
         Time.timeScale = 1f;
-       // SceneManager.LoadScene(1);
         
     }
 }
