@@ -44,6 +44,8 @@ public class GameControl : MonoBehaviour
         }
         collectionPercentage = (roomPercentage[0] + roomPercentage[1]) / noOfRooms;
         //UnityEngine.Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z); //debug no longer needed
+        if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
+        if (playerController == null) playerController = playerObj.GetComponent<CharacterController>();
     }
 
     private void Start()
@@ -66,7 +68,6 @@ public class GameControl : MonoBehaviour
     //happens before start()
     void Awake()
     {
-        if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
         if (control == null) //check if control already exists and create accordingly
         {
             DontDestroyOnLoad(gameObject);
