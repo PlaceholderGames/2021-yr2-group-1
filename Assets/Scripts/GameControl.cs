@@ -44,11 +44,17 @@ public class GameControl : MonoBehaviour
         }
         collectionPercentage = (roomPercentage[0] + roomPercentage[1]) / noOfRooms;
         //UnityEngine.Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z); //debug no longer needed
+        if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
+        if (playerController == null) playerController = playerObj.GetComponent<CharacterController>();
+        if (pauseMenu == null)
+        {
+            GameObject canvas = GameObject.Find("Canvas");
+            pauseMenu = canvas.GetComponent<PauseMenu>();
+        }
     }
 
     private void Start()
     {
-        currentScene = SceneManager.GetActiveScene();
         if (currentScene.name == "Camp")
         {
             roomNumber = 0;
@@ -66,7 +72,6 @@ public class GameControl : MonoBehaviour
     //happens before start()
     void Awake()
     {
-        if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
         if (control == null) //check if control already exists and create accordingly
         {
             DontDestroyOnLoad(gameObject);
@@ -101,6 +106,9 @@ public class GameControl : MonoBehaviour
         data.RotY = playerObj.transform.eulerAngles.y;
         data.RotZ = playerObj.transform.eulerAngles.z;
 
+        currentScene = SceneManager.GetActiveScene();
+        data.savedScene = currentScene.buildIndex;
+
         bf.Serialize(file, data); //translate the data into binary and save to file
         file.Close();
     }
@@ -121,6 +129,11 @@ public class GameControl : MonoBehaviour
             RotX = data.RotX;
             RotY = data.RotY;
             RotZ = data.RotZ;
+
+            if (data.savedScene != SceneManager.GetActiveScene().buildIndex)
+            {
+                SceneManager.LoadScene(data.savedScene);
+            }
 
             //disable controller, reposition player then re-enable controller
             playerController.enabled = false;
@@ -154,7 +167,7 @@ public class PlayerData
     public const int noOfCollectables = 7;
     public float PosX, PosY, PosZ;
     public float RotX, RotY, RotZ;
-    //player level possibly - public int SceneID;
+    public int savedScene;
     //which paintings have been collected, so they cant be collected again
 
     public PlayerData() // default constructor
