@@ -46,7 +46,11 @@ public class GameControl : MonoBehaviour
         //UnityEngine.Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z); //debug no longer needed
         if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
         if (playerController == null) playerController = playerObj.GetComponent<CharacterController>();
-        if (pauseMenu == null) pauseMenu = playerObj.GetComponent<PauseMenu>();
+        if (pauseMenu == null)
+        {
+            GameObject canvas = GameObject.Find("Canvas");
+            pauseMenu = canvas.GetComponent<PauseMenu>();
+        }
     }
 
     private void Start()
