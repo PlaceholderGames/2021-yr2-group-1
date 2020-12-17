@@ -508,11 +508,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 142
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!1 &35623249 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6762739709752951438, guid: 31647ada27dddad4b947b1558636a276, type: 3}
-  m_PrefabInstance: {fileID: 6762739709788509151}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &39779614 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5806689463503414211, guid: a8d5723bf8c99b7429919b6015b84d54, type: 3}
@@ -11239,7 +11234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObj: {fileID: 8885220233670259524}
-  KillboxMenu: {fileID: 35623249}
+  killboxMenu: {fileID: 0}
 --- !u!1 &1707117139
 GameObject:
   m_ObjectHideFlags: 0

@@ -2787,7 +2787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObj: {fileID: 0}
-  KillboxMenu: {fileID: 6762739709752951438}
+  killboxMenu: {fileID: 0}
 --- !u!1 &6762739708562007543
 GameObject:
   m_ObjectHideFlags: 0
@@ -3045,7 +3045,7 @@ GameObject:
   - component: {fileID: 6762739709752951436}
   - component: {fileID: 6762739709752951437}
   m_Layer: 0
-  m_Name: KillboxMenu
+  m_Name: killboxCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
