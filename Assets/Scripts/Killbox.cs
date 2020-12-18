@@ -10,6 +10,7 @@ public class Killbox : MonoBehaviour
 {       
     public GameControl gameObj;
     public GameObject killboxMenu;
+    public GameObject player;
 
 
     void Awake()
@@ -21,13 +22,15 @@ public class Killbox : MonoBehaviour
     // This when attatched to an object, causes a scene change based on the number where the 0 is
     void OnTriggerEnter(Collider other)
     {
-       
-        //Makes cursor visible and unlocks
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-        killboxMenu.SetActive(true);
-        //Pauses time within engine
-        Time.timeScale = 0f;
+        if (other.gameObject.name.Equals("playerCharacter"))
+        {
+            //Makes cursor visible and unlocks
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            killboxMenu.SetActive(true);
+            //Pauses time within engine
+            Time.timeScale = 0f;
+        }
     }
 
     public void quitGame()
