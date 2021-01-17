@@ -16,9 +16,7 @@ public class UI2ndHalf : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for (int i = GameControl.control.firstHalf; i < GameControl.control.secondHalf; i++)
-        {
-            roomCompletion2.text = i + 1 + "- \n" + GameControl.control.noCollected[i] + " / " + GameControl.control.roomCollectables[i] + "\n" + GameControl.control.roomPercentage[i] + "\n";
-        }
+        roomCompletion2.text = 3 + "- \n" + GameControl.control.noCollected[2] + " / " + GameControl.control.roomCollectables[2] + "\n" + GameControl.control.roomPercentage[2] + "\n"
+        + 4 + "- \n" + GameControl.control.noCollected[3] + " / " + GameControl.control.roomCollectables[3] + "\n" + GameControl.control.roomPercentage[3] + "\n";
     }
 }
