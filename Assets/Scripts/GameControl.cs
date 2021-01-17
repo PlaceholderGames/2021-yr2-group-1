@@ -24,16 +24,14 @@ public class GameControl : MonoBehaviour
     public bool[] isCollected = new bool[noOfCollectables];
 
     //Ints for storing room data
-    public const int noOfCollectables = 7;
-    public const int noOfRooms = 3;
-    public int firstHalf = noOfRooms / 2;
-    public int secondHalf = noOfRooms;
+    public const int noOfCollectables = 12;
+    public const int noOfRooms = 4;
     public int roomNumber;
 
     //floats for storing player location and rotation
     public float PosX, PosY, PosZ;
     public float RotX, RotY, RotZ;
-    private Scene currentScene;
+    Scene currentScene;
     
     public void Update()
     {
@@ -42,7 +40,7 @@ public class GameControl : MonoBehaviour
         {
             roomPercentage[i] = (double)noCollected[i] / (double)roomCollectables[i] * 100;
         }
-        collectionPercentage = (roomPercentage[0] + roomPercentage[1]) / noOfRooms;
+        collectionPercentage = (roomPercentage[0] + roomPercentage[1] + roomPercentage[2] + roomPercentage[3]) / noOfRooms;
         //UnityEngine.Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z); //debug no longer needed
         if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
         if (playerController == null) playerController = playerObj.GetComponent<CharacterController>();
@@ -51,21 +49,31 @@ public class GameControl : MonoBehaviour
             GameObject canvas = GameObject.Find("Canvas");
             pauseMenu = canvas.GetComponent<PauseMenu>();
         }
-    }
 
-    private void Start()
-    {
-        if (currentScene.name == "Camp")
+        //Sets currentScene to the currently active Scene
+        currentScene = SceneManager.GetActiveScene();
+        //Current room check
+        if (currentScene.name == "Camp.lvl")
         {
             roomNumber = 0;
         }
-        else if (currentScene.name == "TempleUpdated")
+        else if (currentScene.name == "K_Temple_Room 1")
         {
             roomNumber = 1;
         }
         else if (currentScene.name == "Dragon")
         {
             roomNumber = 2;
+        }
+        else if (currentScene.name == "Room3")
+        {
+            roomNumber = 3;
+        }
+    }
+
+    void Start()
+    {
+        {
         }
     }
 
@@ -164,7 +172,7 @@ public class PlayerData
     public int[] noCollected;
     public double[] roomPercentage;
     public bool[] isCollected;
-    public const int noOfCollectables = 7;
+    public const int noOfCollectables = 12;
     public float PosX, PosY, PosZ;
     public float RotX, RotY, RotZ;
     public int savedScene;
