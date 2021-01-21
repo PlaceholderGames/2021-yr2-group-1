@@ -54,7 +54,7 @@ MonoBehaviour:
   - 0
   noCollected: 00000000000000000000000000000000
   roomCollectables: 03000000030000000300000003000000
-  isCollected: 00000000000000
+  isCollected: 000000000000000000000000
   roomNumber: 0
   PosX: 0
   PosY: 0
