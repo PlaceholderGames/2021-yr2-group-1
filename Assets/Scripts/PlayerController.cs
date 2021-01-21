@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "Ladder")
         {
             ladderCollision = true;
+            //ladderToggle = true;
         }
     }
     void OnTriggerExit(Collider other)
