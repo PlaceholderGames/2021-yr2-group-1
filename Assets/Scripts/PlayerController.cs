@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
     //animator variable
     public Animator anim;
 
+    //Jump variable
+    public bool isJumping;
+
     //Torch Variables
     public GameObject torch;
     public bool torchToggle;
@@ -81,10 +84,12 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetButton("Jump"))
                 {
                     verticalVelocity = jumpForce;
+                    isJumping = true;
                 }
                 else if (!Input.GetButton("Jump"))
                 {
                     verticalVelocity = 0f;
+                    isJumping = false;
                 }
             }
 
@@ -155,5 +160,6 @@ public class PlayerController : MonoBehaviour
         // add in toggle for animation update
         anim.SetBool("torchTriggered", torchToggle);
         anim.SetBool("climbingTriggered", ladderToggle);
+        anim.SetBool("isJumping", isJumping);
     }
 }
