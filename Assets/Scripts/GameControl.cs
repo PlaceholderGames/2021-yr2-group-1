@@ -69,11 +69,22 @@ public class GameControl : MonoBehaviour
         {
             roomNumber = 3;
         }
+        //
+        // Could the above be replaced with a roomNumber = (currentScene - 1) as then this allows for future levels to be added, provided the levels with paintings are all in order
+        //
+
+
     }
 
     void Start()
     {
         {
+            if (File.Exists(Application.persistentDataPath + "/playerInfo.dat"))
+            { }
+            else
+            {
+                Save();
+            }
         }
     }
 
