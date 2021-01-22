@@ -42,16 +42,21 @@ public class GameControl : MonoBehaviour
         }
         collectionPercentage = (roomPercentage[0] + roomPercentage[1] + roomPercentage[2] + roomPercentage[3]) / noOfRooms;
         //UnityEngine.Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z); //debug no longer needed
-        if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
-        if (playerController == null) playerController = playerObj.GetComponent<CharacterController>();
-        if (pauseMenu == null)
-        {
-            GameObject canvas = GameObject.Find("Canvas");
-            pauseMenu = canvas.GetComponent<PauseMenu>();
-        }
 
         //Sets currentScene to the currently active Scene
-        currentScene = SceneManager.GetActiveScene();
+        if (currentScene != SceneManager.GetActiveScene())
+        {
+            if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
+            if (playerController == null) playerController = playerObj.GetComponent<CharacterController>();
+            if (pauseMenu == null)
+            {
+                GameObject canvas = GameObject.Find("Canvas");
+                pauseMenu = canvas.GetComponent<PauseMenu>();
+            }
+            currentScene = SceneManager.GetActiveScene();
+            Save("/autoSave.dat");
+        }
+
         //Current room check
         if (currentScene.name == "Camp.lvl")
         {
@@ -69,12 +74,23 @@ public class GameControl : MonoBehaviour
         {
             roomNumber = 3;
         }
+        //
+        // Could the above be replaced with a roomNumber = (currentScene - 1) as then this allows for future levels to be added, provided the levels with paintings are all in order
+        //
+
+
     }
 
     void Start()
     {
+        if (playerObj == null) playerObj = GameObject.Find("playerCharacter");
+        if (playerController == null) playerController = playerObj.GetComponent<CharacterController>();
+        if (pauseMenu == null)
         {
+            GameObject canvas = GameObject.Find("Canvas");
+            pauseMenu = canvas.GetComponent<PauseMenu>();
         }
+        Save("/autoSave.dat");
     }
 
     //happens before start()
@@ -97,10 +113,10 @@ public class GameControl : MonoBehaviour
         GUI.Label(new Rect(10, 20, 150, 30), "Collection Number: " + noCollected[roomNumber]); //display on gui for testing purposes
     }
 
-    public void Save()
+    public void Save(string saveName)
     {
         BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.dat"); //tell where to save
+        FileStream file = File.Create(Application.persistentDataPath + saveName); //tell where to save
 
         PlayerData data = new PlayerData(); //create new instance of playerdata and set the variables based on the game at save
         data.noCollected = noCollected;
@@ -121,12 +137,12 @@ public class GameControl : MonoBehaviour
         file.Close();
     }
 
-    public void Load()
+    public void Load(string saveName)
     {
-        if(File.Exists(Application.persistentDataPath + "/playerInfo.dat"))
+        if (File.Exists(Application.persistentDataPath + saveName))
         {
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(Application.persistentDataPath + "/playerInfo.dat", FileMode.Open);
+            FileStream file = File.Open(Application.persistentDataPath + saveName, FileMode.Open);
             PlayerData data = (PlayerData)bf.Deserialize(file); //casts data pulled into playerdata object
             file.Close();
             noCollected = data.noCollected;
@@ -158,8 +174,38 @@ public class GameControl : MonoBehaviour
                 SceneManager.LoadScene(1);//need to change to load appropriate scene
             }
             */
-            
+
         }
+        else if (File.Exists(Application.persistentDataPath + "/autoSave.dat"))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Open(Application.persistentDataPath + "/autoSave.dat", FileMode.Open);
+            PlayerData data = (PlayerData)bf.Deserialize(file); //casts data pulled into playerdata object
+            file.Close();
+            noCollected = data.noCollected;
+            collectionPercentage = data.collectionPercentage;
+            PosX = data.PosX;
+            PosY = data.PosY;
+            PosZ = data.PosZ;
+            RotX = data.RotX;
+            RotY = data.RotY;
+            RotZ = data.RotZ;
+
+            if (data.savedScene != SceneManager.GetActiveScene().buildIndex)
+            {
+                SceneManager.LoadScene(data.savedScene);
+            }
+
+            //disable controller, reposition player then re-enable controller
+            playerController.enabled = false;
+            playerObj.transform.position = new Vector3(PosX, (PosY + 0.5f), PosZ);
+            playerObj.transform.eulerAngles = new Vector3(RotX, RotY, RotZ);
+            playerController.enabled = true;
+
+            //setting the game to un pause
+            pauseMenu.resumeGame();
+        }
+        else SceneManager.LoadScene(currentScene.buildIndex);
     }
 
 }

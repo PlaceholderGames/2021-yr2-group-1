@@ -8,12 +8,18 @@ using UnityEngine.SceneManagement;
 
 public class Killbox : MonoBehaviour
 {       
-    public GameControl gameObj;
+    public GameControl gameObj = null;
     public GameObject killboxMenu;
     public GameObject player;
 
 
     void Awake()
+    {
+       gameObj = FindObjectOfType<GameControl>();
+       killboxMenu = GameObject.Find("playerCharacter/KillboxMenu/killboxCanvas");
+    }
+
+    void Update()
     {
         if (gameObj == null) gameObj = FindObjectOfType<GameControl>();
         if (killboxMenu == null) killboxMenu = GameObject.Find("playerCharacter/KillboxMenu/killboxCanvas");
@@ -40,7 +46,7 @@ public class Killbox : MonoBehaviour
 
     public void loadLevel1()
     {
-        gameObj.Load();
+        gameObj.Load("/autoSave.dat");
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         killboxMenu.SetActive(false);
