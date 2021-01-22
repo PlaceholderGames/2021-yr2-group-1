@@ -46,7 +46,7 @@ public class Killbox : MonoBehaviour
 
     public void loadLevel1()
     {
-        gameObj.Load();
+        gameObj.Load("/autoSave.dat");
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         killboxMenu.SetActive(false);

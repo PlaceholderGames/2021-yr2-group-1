@@ -18,11 +18,11 @@ public class AdjustScript : MonoBehaviour
             // }
             if (GUI.Button(new Rect(10, 260, 100, 30), "Save"))
             {
-                GameControl.control.Save();
+                GameControl.control.Save("/playerInfo.dat");
             }
             if (GUI.Button(new Rect(10, 300, 100, 30), "Load"))
             {
-                GameControl.control.Load();
+                GameControl.control.Load("/playerInfo.dat");
             }
         }
     }
