@@ -11969,6 +11969,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPCBrian
       objectReference: {fileID: 0}
+    - target: {fileID: 3937823885946148652, guid: 1265e49ef93d5b648a94cdd4718d1d8a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3937823885946148653, guid: 1265e49ef93d5b648a94cdd4718d1d8a, type: 3}
       propertyPath: m_Speed
       value: 2.5
