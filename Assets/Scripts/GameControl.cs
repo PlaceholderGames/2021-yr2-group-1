@@ -14,18 +14,18 @@ public class GameControl : MonoBehaviour
     public static GameControl control; //create instance of gamecontrol class
     public GameObject playerObj = null; //reference to player
     public CharacterController playerController; //reference to player controller
-    public double collectionPercentage; //the variable we want to save/load
+    public float collectionPercentage; //the variable we want to save/load
     public PauseMenu pauseMenu;
 
     //Arrays for storing gamedata
-    public double[] roomPercentage = new double[noOfRooms];
+    public float[] roomPercentage = new float[noOfRooms];
     public int[] noCollected = new int[noOfRooms];
     public int[] roomCollectables = new int[noOfRooms];
     public bool[] isCollected = new bool[noOfCollectables];
 
     //Ints for storing room data
-    public const int noOfCollectables = 12;
-    public const int noOfRooms = 4;
+    public const int noOfCollectables = 16;
+    public const int noOfRooms = 6;
     public int roomNumber;
 
     //floats for storing player location and rotation
@@ -38,7 +38,7 @@ public class GameControl : MonoBehaviour
         //Percentage Calculation
         for (int i = 0; i < noOfRooms; i++)
         {
-            roomPercentage[i] = (double)noCollected[i] / (double)roomCollectables[i] * 100;
+            roomPercentage[i] = (float)noCollected[i] / (float)roomCollectables[i] * 100;
         }
         collectionPercentage = (roomPercentage[0] + roomPercentage[1] + roomPercentage[2] + roomPercentage[3]) / noOfRooms;
         //UnityEngine.Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z); //debug no longer needed
@@ -66,19 +66,26 @@ public class GameControl : MonoBehaviour
         {
             roomNumber = 1;
         }
-        else if (currentScene.name == "Dragon")
+        else if (currentScene.name == "Templefinal")
         {
             roomNumber = 2;
         }
-        else if (currentScene.name == "Room3")
+        else if (currentScene.name == "Dragon")
         {
             roomNumber = 3;
+        }
+        else if (currentScene.name == "DeanLVL")
+        {
+            roomNumber = 4;
+        }
+        else if (currentScene.name == "Room3")
+        {
+            roomNumber = 5;
         }
         //
         // Could the above be replaced with a roomNumber = (currentScene - 1) as then this allows for future levels to be added, provided the levels with paintings are all in order
         //
-
-
+        if (currentScene.name != "Room3") RenderSettings.skybox.SetFloat("_Exposure", ((100 - collectionPercentage)/100));
     }
 
     void Start()
@@ -215,9 +222,9 @@ public class GameControl : MonoBehaviour
 [Serializable]
 public class PlayerData
 {
-    public double collectionPercentage;
+    public float collectionPercentage;
     public int[] noCollected;
-    public double[] roomPercentage;
+    public float[] roomPercentage;
     public bool[] isCollected;
     public const int noOfCollectables = 12;
     public float PosX, PosY, PosZ;
