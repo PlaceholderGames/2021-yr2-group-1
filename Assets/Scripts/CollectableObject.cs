@@ -48,6 +48,7 @@ public class CollectableObject : MonoBehaviour
         }
 
         if (GameControl.control.isCollected[itemID] == true) rend.enabled = false;
+        else rend.enabled = true;
     }
 
     void OnTriggerEnter(Collider collision)

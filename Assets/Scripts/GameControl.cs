@@ -146,6 +146,7 @@ public class GameControl : MonoBehaviour
             PlayerData data = (PlayerData)bf.Deserialize(file); //casts data pulled into playerdata object
             file.Close();
             noCollected = data.noCollected;
+            isCollected = data.isCollected;
             collectionPercentage = data.collectionPercentage;
             PosX = data.PosX;
             PosY = data.PosY;
