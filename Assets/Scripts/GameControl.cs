@@ -24,8 +24,8 @@ public class GameControl : MonoBehaviour
     public bool[] isCollected = new bool[noOfCollectables];
 
     //Ints for storing room data
-    public const int noOfCollectables = 12;
-    public const int noOfRooms = 4;
+    public const int noOfCollectables = 16;
+    public const int noOfRooms = 6;
     public int roomNumber;
 
     //floats for storing player location and rotation
@@ -66,13 +66,21 @@ public class GameControl : MonoBehaviour
         {
             roomNumber = 1;
         }
-        else if (currentScene.name == "Dragon")
+        else if (currentScene.name == "Templefinal")
         {
             roomNumber = 2;
         }
-        else if (currentScene.name == "Room3")
+        else if (currentScene.name == "Dragon")
         {
             roomNumber = 3;
+        }
+        else if (currentScene.name == "DeanLVL")
+        {
+            roomNumber = 4;
+        }
+        else if (currentScene.name == "Room3")
+        {
+            roomNumber = 5;
         }
         //
         // Could the above be replaced with a roomNumber = (currentScene - 1) as then this allows for future levels to be added, provided the levels with paintings are all in order
