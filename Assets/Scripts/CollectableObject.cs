@@ -12,6 +12,9 @@ public class CollectableObject : MonoBehaviour
     public GameObject dot;
     public GameObject cross;
 
+    public GameObject image; //reference for image on painting
+    public Renderer rend; //for referencing mesh on image
+
     public int itemID;
 
     // Start is called before the first frame update
@@ -21,6 +24,10 @@ public class CollectableObject : MonoBehaviour
         dot = GameObject.Find("dot");
         cross = GameObject.Find("cross");
         cross.SetActive(false);
+
+        //setting up the reference to the image mesh
+        rend = image.GetComponent<Renderer>();
+        rend.enabled = true;
     }
 
     // Update is called once per frame
@@ -36,7 +43,11 @@ public class CollectableObject : MonoBehaviour
             Debug.Log("Collected - " + itemID + " = " + GameControl.control.isCollected[itemID]);
             cross.SetActive(false);
             dot.SetActive(true);
+            //Destroy(image); //this will cause problems when reloading
+            //rend.enabled = false;
         }
+
+        if (GameControl.control.isCollected[itemID] == true) rend.enabled = false;
     }
 
     void OnTriggerEnter(Collider collision)

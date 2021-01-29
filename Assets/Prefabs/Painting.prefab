@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3331229318158716731}
   - component: {fileID: 6612225756459788934}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: PaintingImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,6 +209,8 @@ MonoBehaviour:
   collectionAllowed: 0
   dot: {fileID: 0}
   cross: {fileID: 0}
+  image: {fileID: 2254365379417433127}
+  rend: {fileID: 0}
   itemID: 0
 --- !u!65 &3707355730534174791
 BoxCollider:
