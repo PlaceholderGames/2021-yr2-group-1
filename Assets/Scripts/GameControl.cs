@@ -16,13 +16,15 @@ public class GameControl : MonoBehaviour
     public CharacterController playerController; //reference to player controller
     public float collectionPercentage; //the variable we want to save/load
     public PauseMenu pauseMenu;
+    public int Rocks = 0;
+  
 
     //Arrays for storing gamedata
     public float[] roomPercentage = new float[noOfRooms];
     public int[] noCollected = new int[noOfRooms];
     public int[] roomCollectables = new int[noOfRooms];
     public bool[] isCollected = new bool[noOfCollectables];
-
+  
     //Ints for storing room data
     public const int noOfCollectables = 16;
     public const int noOfRooms = 6;
