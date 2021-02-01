@@ -14,6 +14,6 @@ public class EndingOpenScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObj.collectionPercentage >= 80) Destroy(this);
+        if (gameObj.collectionPercentage >= 80) Destroy(gameObject);
     }
 }

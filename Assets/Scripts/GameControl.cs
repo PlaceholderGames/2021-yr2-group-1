@@ -87,7 +87,7 @@ public class GameControl : MonoBehaviour
         //
         // Could the above be replaced with a roomNumber = (currentScene - 1) as then this allows for future levels to be added, provided the levels with paintings are all in order
         //
-        if (currentScene.name != "Room3") RenderSettings.skybox.SetFloat("_Exposure", ((110 - collectionPercentage)/100)); //set to 110 to prevent it from reaching 0 i.e. pitch black
+        if (currentScene.name != "Room3") RenderSettings.skybox.SetFloat("_Exposure", ((100 - collectionPercentage)/100)); //set to 110 to prevent it from reaching 0 i.e. pitch black
     }
 
     void Start()
@@ -116,11 +116,13 @@ public class GameControl : MonoBehaviour
         }
     }
 
+    /* //This is for testing purposes and so has been removed for the game
     void OnGUI()
     {
         GUI.Label(new Rect(10, 10, 300, 30), "Collection Percentage: " + collectionPercentage); //display on gui for testing purposes
         GUI.Label(new Rect(10, 20, 150, 30), "Collection Number: " + noCollected[roomNumber]); //display on gui for testing purposes
     }
+    */
 
     public void Save(string saveName)
     {

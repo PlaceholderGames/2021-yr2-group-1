@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class AdjustScript : MonoBehaviour
 {
+    public PauseMenu pauseMenu;
+
+    void Awake()
+    {
+        GameObject canvas = GameObject.Find("Canvas");
+        pauseMenu = canvas.GetComponent<PauseMenu>();
+    }
+
     void OnGUI()
     {
-        if (Time.timeScale == 0f)
+        if (pauseMenu.isPaused)
         {
             // if(GUI.Button(new Rect(10,100,210,30), "Collection Percentage Up"))
             // {

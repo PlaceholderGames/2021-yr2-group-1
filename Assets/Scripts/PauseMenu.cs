@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool isPaused = false;
+    public bool isPaused = false;
     bool menuChange = false;
 
     public GameObject pauseMenu;
@@ -42,7 +42,7 @@ public class PauseMenu : MonoBehaviour
         menuChange = false;
     }
 
-    void pauseGame()
+    public void pauseGame()
     {
         //Makes cursor visible and unlocks
         Cursor.visible = true;
