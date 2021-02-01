@@ -116,11 +116,13 @@ public class GameControl : MonoBehaviour
         }
     }
 
+    /* //This is for testing purposes and so has been removed for the game
     void OnGUI()
     {
         GUI.Label(new Rect(10, 10, 300, 30), "Collection Percentage: " + collectionPercentage); //display on gui for testing purposes
         GUI.Label(new Rect(10, 20, 150, 30), "Collection Number: " + noCollected[roomNumber]); //display on gui for testing purposes
     }
+    */
 
     public void Save(string saveName)
     {
