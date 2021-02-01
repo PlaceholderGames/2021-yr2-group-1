@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e057444b9ee4bf48b00c20f9f31a1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNumber: 5
+  sceneNumber: 6
 --- !u!65 &18770959
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18501,7 +18501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e057444b9ee4bf48b00c20f9f31a1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNumber: 0
+  sceneNumber: 5
 --- !u!1 &1771382002
 GameObject:
   m_ObjectHideFlags: 0
@@ -20417,7 +20417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e057444b9ee4bf48b00c20f9f31a1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNumber: 3
+  sceneNumber: 4
 --- !u!65 &1962777689
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20429,8 +20429,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1, z: 1.6834114}
+  m_Center: {x: 2.5172003e-16, y: 0, z: 0.34170574}
 --- !u!33 &1962777690
 MeshFilter:
   m_ObjectHideFlags: 0
