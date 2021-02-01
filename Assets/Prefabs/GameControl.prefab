@@ -47,14 +47,17 @@ MonoBehaviour:
   playerController: {fileID: 0}
   collectionPercentage: 0
   pauseMenu: {fileID: 0}
+  Rocks: 0
   roomPercentage:
   - 0
   - 0
   - 0
   - 0
-  noCollected: 00000000000000000000000000000000
-  roomCollectables: 03000000030000000300000003000000
-  isCollected: 000000000000000000000000
+  - 0
+  - 0
+  noCollected: 000000000000000000000000000000000000000000000000
+  roomCollectables: 030000000300000001000000030000000300000003000000
+  isCollected: 00000000000000000000000000000000
   roomNumber: 0
   PosX: 0
   PosY: 0
