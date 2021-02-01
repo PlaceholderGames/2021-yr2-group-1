@@ -183,7 +183,7 @@ public class PlayerController : MonoBehaviour
         //animation updates
         //gets the player input for a & d and applies them to a float called strafe
         float strafe = Input.GetAxis("Horizontal");
-        //gets the player input for w & a and applies them to a float called forward
+        //gets the player input for w & s and applies them to a float called forward
         float forward = Input.GetAxis("Vertical");
 
         float up = moveDirection.y;
