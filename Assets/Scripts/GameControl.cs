@@ -42,7 +42,7 @@ public class GameControl : MonoBehaviour
         {
             roomPercentage[i] = (float)noCollected[i] / (float)roomCollectables[i] * 100;
         }
-        collectionPercentage = (roomPercentage[0] + roomPercentage[1] + roomPercentage[2] + roomPercentage[3]) / noOfRooms;
+        collectionPercentage = (roomPercentage[0] + roomPercentage[1] + roomPercentage[2] + roomPercentage[3] + roomPercentage[4] + roomPercentage[5]) / noOfRooms;
         //UnityEngine.Debug.Log("Player Position: X = " + playerObj.transform.position.x + " --- Y = " + playerObj.transform.position.y + " --- Z = " + playerObj.transform.position.z); //debug no longer needed
 
         //Sets currentScene to the currently active Scene
