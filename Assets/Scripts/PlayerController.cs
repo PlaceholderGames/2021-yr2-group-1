@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 //using UnityEditor.VersionControl;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -58,6 +59,40 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.LeftShift)) //implementation of level skip function for testing purposes
+        {
+            if (Input.GetKeyDown(KeyCode.F1))
+            {
+                SceneManager.LoadScene(1);
+                UnityEngine.Debug.Log("scene 1 skip");
+            }
+            if (Input.GetKeyDown(KeyCode.F2))
+            {
+                SceneManager.LoadScene(2);
+                UnityEngine.Debug.Log("scene 2 skip");
+            }
+            if (Input.GetKeyDown(KeyCode.F3))
+            {
+                SceneManager.LoadScene(3);
+                UnityEngine.Debug.Log("scene 3 skip");
+            }
+            if (Input.GetKeyDown(KeyCode.F4))
+            {
+                SceneManager.LoadScene(4);
+                UnityEngine.Debug.Log("scene 4 skip");
+            }
+            if (Input.GetKeyDown(KeyCode.F5))
+            {
+                SceneManager.LoadScene(5);
+                UnityEngine.Debug.Log("scene 5 skip");
+            }
+            if (Input.GetKeyDown(KeyCode.F6))
+            {
+                SceneManager.LoadScene(6);
+                UnityEngine.Debug.Log("scene 6 skip");
+            }
+        }
+
         if (ladderToggle == false)
         {
             //Allows for input of all cardinal directions and cominations of them
