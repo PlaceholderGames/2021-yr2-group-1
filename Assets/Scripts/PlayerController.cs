@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
         if (ladderToggle == false)
         {
             //Allows for input of all cardinal directions and cominations of them
-            moveDirection = (transform.forward * Input.GetAxis("Vertical")) + (transform.right * Input.GetAxis("Horizontal"));
+            moveDirection = (transform.forward * Input.GetAxisRaw("Vertical")) + (transform.right * Input.GetAxisRaw("Horizontal"));
             //Stops speed being doubled on diagonal input
             moveDirection = moveDirection.normalized * moveSpeed;
             //Sets Y value to verticalVelocity
@@ -106,14 +106,18 @@ public class PlayerController : MonoBehaviour
             if (controller.isGrounded)
             {
                 //Checks if shift is held and changes speed
-                if (Input.GetKey(KeyCode.LeftShift))
+                if (Input.GetKey(KeyCode.LeftShift) && !Input.GetKey(KeyCode.S))
                 {
                     moveSpeed = sprintSpeed;
                 }
                 //Checks if shift is not held and reverts speed to default
-                else if (!Input.GetKey(KeyCode.LeftShift))
+                else if (!Input.GetKey(KeyCode.LeftShift) && !Input.GetKey(KeyCode.S))
                 {
                     moveSpeed = 5.0f;
+                }
+                else if (Input.GetKey(KeyCode.S))
+                {
+                    moveSpeed = 2.5f;
                 }
 
                 //Checks if jump button is pressed and jumps if so
