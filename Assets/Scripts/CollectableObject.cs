@@ -30,8 +30,8 @@ public class CollectableObject : MonoBehaviour
         rend.enabled = true;
     }
 
-    // Update is called once per frame
-    void Update()
+        // Update is called once per frame
+        void Update()
     {
         //Checks if collection is allowed, the collectable hasn't been collected yet and the right mouse button is pressed
         if (collectionAllowed == true && GameControl.control.isCollected[itemID] == false && Input.GetMouseButtonDown(1))
@@ -43,6 +43,7 @@ public class CollectableObject : MonoBehaviour
             Debug.Log("Collected - " + itemID + " = " + GameControl.control.isCollected[itemID]);
             cross.SetActive(false);
             dot.SetActive(true);
+            GameControl.control.Save("/playerInfo.dat");
             //Destroy(image); //this will cause problems when reloading
             //rend.enabled = false;
         }
