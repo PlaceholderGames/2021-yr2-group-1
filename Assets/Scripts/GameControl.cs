@@ -17,6 +17,7 @@ public class GameControl : MonoBehaviour
     public float collectionPercentage; //the variable we want to save/load
     public PauseMenu pauseMenu;
     public int Rocks = 0;
+    public bool isDead = false;
   
 
     //Arrays for storing gamedata

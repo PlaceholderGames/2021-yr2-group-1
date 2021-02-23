@@ -16,7 +16,7 @@ public class PauseMenu : MonoBehaviour
     void Update()
     {
         //Check that Escape has been pressed and performs functions based on state of isPaused variable
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && GameControl.control.isDead == false)
         {
             if (isPaused == true)
             {
