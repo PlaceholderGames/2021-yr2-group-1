@@ -30,6 +30,7 @@ public class Killbox : MonoBehaviour
     {
         if (other.gameObject.name.Equals("playerCharacter"))
         {
+            GameControl.control.isDead = true;
             //Makes cursor visible and unlocks
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
@@ -47,11 +48,11 @@ public class Killbox : MonoBehaviour
     public void loadLevel1()
     {
         gameObj.Load("/autoSave.dat");
+        GameControl.control.isDead = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         killboxMenu.SetActive(false);
         //Sets time to tick at normal speed
         Time.timeScale = 1f;
-        
     }
 }

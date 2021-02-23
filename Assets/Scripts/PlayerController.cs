@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(controller.isGrounded);
         if (Input.GetKey(KeyCode.LeftShift)) //implementation of level skip function for testing purposes
         {
             if (Input.GetKeyDown(KeyCode.F1))
@@ -121,15 +122,14 @@ public class PlayerController : MonoBehaviour
                 }
 
                 //Checks if jump button is pressed and jumps if so
-                if (Input.GetButton("Jump"))
+                if (Input.GetButtonDown("Jump"))
                 {
                     verticalVelocity = jumpForce;
                     isJumping = true;
                 }
                 else if (!Input.GetButton("Jump"))
                 {
-                    verticalVelocity = 0f;
-                    isJumping = false;
+                    verticalVelocity = -0.55f;
                 }
             }
 
@@ -137,6 +137,7 @@ public class PlayerController : MonoBehaviour
             {
                 //Gradually takes away gravity from verticalVelocity on jump
                 verticalVelocity -= gravityScale * Time.deltaTime;
+                isJumping = false;
             }
 
             //Checks if torchToggles is off and sets to true
