@@ -8,6 +8,7 @@ public class RopeScript : MonoBehaviour
     //public GameObject above;
     //public GameObject below;
     public GameObject[] allAbove;
+    public isBurning rope;
 
     //Detect collisions between the GameObjects with Colliders attached
     void OnCollisionEnter(Collision collision)
@@ -16,6 +17,7 @@ public class RopeScript : MonoBehaviour
         if (collision.gameObject.name == "Torch")
         {
             Destroy(gameObject, destroyTime);
+            if (rope.burning == false) rope.burning = true;
             for (int i=0;i<allAbove.Length;i++) //cycle through the array and remove each item 1 second at a time
             {
                 //add in material change

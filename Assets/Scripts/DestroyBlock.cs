@@ -13,7 +13,7 @@ public class DestroyBlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameControl.control.Rocks == 4)
+        if (GameControl.control.Rocks >= 4)
         {
             Destroy(this.gameObject);
         }
