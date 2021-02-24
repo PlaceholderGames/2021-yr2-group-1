@@ -166,6 +166,7 @@ MonoBehaviour:
   allAbove:
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &1709534851342390039
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +335,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &2028351922605386906
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +509,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &2226818959141579914
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,6 +677,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &2621054802465234184
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,6 +843,7 @@ MonoBehaviour:
   destroyTime: 1
   allAbove:
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &3627232495469422435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,6 +1023,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &3627232495570020588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,6 +1204,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &3627232495851811284
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,6 +1388,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &3627232496070098324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,6 +1570,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &3627232496569275987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,6 +1755,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &3627232496634053131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,6 +1930,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &3627232496645775578
 GameObject:
   m_ObjectHideFlags: 0
@@ -2096,6 +2107,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &3627232496704437508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,6 +2290,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &3627232496825403172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2456,6 +2469,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &3627232496977083506
 GameObject:
   m_ObjectHideFlags: 0
@@ -2631,6 +2645,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &3627232497130162936
 GameObject:
   m_ObjectHideFlags: 0
@@ -2808,6 +2823,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &3827740813021562844
 GameObject:
   m_ObjectHideFlags: 0
@@ -2978,6 +2994,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &4706147329381016046
 GameObject:
   m_ObjectHideFlags: 0
@@ -3149,6 +3166,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &4773304767537906327
 GameObject:
   m_ObjectHideFlags: 0
@@ -3321,6 +3339,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &5595941471673155719
 GameObject:
   m_ObjectHideFlags: 0
@@ -3490,6 +3509,7 @@ MonoBehaviour:
   - {fileID: 1435413800972830647}
   - {fileID: 2621054802465234184}
   - {fileID: 6391673802988426073}
+  rope: {fileID: 4564801189525282413}
 --- !u!1 &6056797409716576194
 GameObject:
   m_ObjectHideFlags: 0
@@ -3499,6 +3519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6094418301013040717}
+  - component: {fileID: 4564801189525282413}
   m_Layer: 0
   m_Name: Rope
   m_TagString: Untagged
@@ -3541,6 +3562,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4564801189525282413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6056797409716576194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5d581921519d2144b41bdb0ed8b3de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  burning: 0
 --- !u!1 &6391673802988426073
 GameObject:
   m_ObjectHideFlags: 0
