@@ -454,10 +454,10 @@ BlendTree:
     m_DirectBlendParameter: Forward
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 2ec1ed9a94fa1fb489f30a9658f33b8e, type: 3}
+    m_Motion: {fileID: -203655887218126122, guid: 788491ed15c202a45a463ae3660a0566, type: 3}
     m_Threshold: 15
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
+    m_TimeScale: 2
     m_CycleOffset: 0
     m_DirectBlendParameter: Forward
     m_Mirror: 0
@@ -1509,10 +1509,10 @@ BlendTree:
     m_DirectBlendParameter: Forward
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: fba809d2ad4c583428bcc718e40fca9f, type: 3}
+    m_Motion: {fileID: -203655887218126122, guid: f7fac841e338c564f8054e19ae03b702, type: 3}
     m_Threshold: 15
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
+    m_TimeScale: 2
     m_CycleOffset: 0
     m_DirectBlendParameter: Forward
     m_Mirror: 0
@@ -2107,9 +2107,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: climbingTriggered
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: torchTriggered
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -67325154044546114}
   m_Solo: 0
@@ -2194,10 +2191,10 @@ BlendTree:
     m_DirectBlendParameter: Forward
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 74333df64d988544e8780548f62d144a, type: 3}
+    m_Motion: {fileID: -203655887218126122, guid: 470445093c696104eb481e1050d00df1, type: 3}
     m_Threshold: 15
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
+    m_TimeScale: 2
     m_CycleOffset: 0
     m_DirectBlendParameter: Forward
     m_Mirror: 0
@@ -2409,9 +2406,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: climbingTriggered
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: torchTriggered
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -67325154044546114}
   m_Solo: 0
@@ -2550,9 +2544,6 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 2
     m_ConditionEvent: climbingTriggered
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: torchTriggered
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -67325154044546114}
@@ -3575,9 +3566,6 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 2
     m_ConditionEvent: isJumping
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: torchTriggered
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -67325154044546114}
