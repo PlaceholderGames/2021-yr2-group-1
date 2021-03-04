@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 470445093c696104eb481e1050d00df1
+guid: 8044629d114817f45b948825ffd420a2
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Standing Torch Walk Forward
+    second: Jog Strafe Left
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Standing Torch Walk Forward
+      name: Jog Strafe Left
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 33
+      lastFrame: 21
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -59,14 +59,14 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.19536188
+      - time: 0.35558677
         functionName: Step
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.69290227
+      - time: 0.8657765
         functionName: Step
         data: 
         objectReferenceParameter: {instanceID: 0}
