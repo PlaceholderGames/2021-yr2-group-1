@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(controller.isGrounded);
+        Debug.Log("is Ground = " + controller.isGrounded);
         if (Input.GetKey(KeyCode.LeftShift)) //implementation of level skip function for testing purposes
         {
             if (Input.GetKeyDown(KeyCode.F1))
@@ -130,6 +130,7 @@ public class PlayerController : MonoBehaviour
                 else if (!Input.GetButton("Jump"))
                 {
                     verticalVelocity = -0.55f;
+                    isJumping = false;
                 }
             }
 
@@ -137,7 +138,6 @@ public class PlayerController : MonoBehaviour
             {
                 //Gradually takes away gravity from verticalVelocity on jump
                 verticalVelocity -= gravityScale * Time.deltaTime;
-                isJumping = false;
             }
 
             //Checks if torchToggles is off and sets to true
@@ -197,10 +197,12 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("Forward", forward);
         anim.SetFloat("Right", strafe);
         anim.SetFloat("Up", up);
+        anim.SetFloat("Speed", moveSpeed);
 
         // add in toggle for animation update
         anim.SetBool("torchTriggered", torchToggle);
         anim.SetBool("climbingTriggered", ladderToggle);
         anim.SetBool("isJumping", isJumping);
+        //Debug.Log("jumping = " + isJumping);
     }
 }
