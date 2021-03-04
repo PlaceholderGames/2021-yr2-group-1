@@ -24,8 +24,9 @@ public class FootSteps : MonoBehaviour
     {
         if (controller.isGrounded)
         {
-            AudioClip clip = GetRandomClip();
-            audioSource.PlayOneShot(clip);
+            AudioClip stepClip = GetRandomClip();
+            audioSource.clip = stepClip;
+            audioSource.Play();
             //UnityEngine.Debug.Log("Step");
         }
         //added in if check to only create footstep sound when the player is grounded however this doesn't always work
