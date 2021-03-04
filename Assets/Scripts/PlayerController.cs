@@ -23,8 +23,8 @@ public class PlayerController : MonoBehaviour
     //animator variable
     public Animator anim;
 
-    //Jump variable
-    public bool isJumping;
+    //Jump variable LEGACY
+    //public bool isJumping;
 
     //Torch Variables
     public GameObject torch;
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("is Ground = " + controller.isGrounded);
+        //Debug.Log("is Ground = " + controller.isGrounded);
         if (Input.GetKey(KeyCode.LeftShift)) //implementation of level skip function for testing purposes
         {
             if (Input.GetKeyDown(KeyCode.F1))
@@ -125,12 +125,12 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetButtonDown("Jump"))
                 {
                     verticalVelocity = jumpForce;
-                    isJumping = true;
+                    //isJumping = true;
                 }
                 else if (!Input.GetButton("Jump"))
                 {
                     verticalVelocity = -0.55f;
-                    isJumping = false;
+                    //isJumping = false;
                 }
             }
 
@@ -202,7 +202,7 @@ public class PlayerController : MonoBehaviour
         // add in toggle for animation update
         anim.SetBool("torchTriggered", torchToggle);
         anim.SetBool("climbingTriggered", ladderToggle);
-        anim.SetBool("isJumping", isJumping);
+        //anim.SetBool("isJumping", isJumping);
         //Debug.Log("jumping = " + isJumping);
     }
 }
