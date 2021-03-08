@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenu;
     public GameObject completionMenu;
+    public GameObject completionCheck;
 
     // Update is called once per frame
     void Update()
@@ -27,6 +28,28 @@ public class PauseMenu : MonoBehaviour
                 pauseGame();
             }
         }
+        if (GameControl.control.templeDiscovered == false && GameControl.control.roomNumber == 2)
+        {
+            GameControl.control.templeDiscovered = true;
+        }
+        if (GameControl.control.previousRoomNumber != GameControl.control.roomNumber)
+        {
+            if (GameControl.control.templeDiscovered == true && GameControl.control.roomNumber != 2 && GameControl.control.noCollected[GameControl.control.roomNumber] == GameControl.control.roomCollectables[GameControl.control.roomNumber])
+            {
+                pauseCompletionCheck();
+                UnityEngine.Debug.Log("Check worked");
+            }
+            GameControl.control.previousRoomNumber = GameControl.control.roomNumber;
+        }
+    }
+    public void pauseCompletionCheck()
+    {
+        //Makes cursor visible and unlocks
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        completionCheck.SetActive(true);
+        //Pauses time within engine
+        Time.timeScale = 0f;
     }
 
     public void resumeGame()
@@ -36,6 +59,7 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         pauseMenu.SetActive(false);
         completionMenu.SetActive(false);
+        completionCheck.SetActive(false);
         //Sets time to tick at normal speed
         Time.timeScale = 1f;
         isPaused = false;
@@ -74,8 +98,9 @@ public class PauseMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void loadLevel1()
+    public void loadLevel()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
+        resumeGame();
     }
 }

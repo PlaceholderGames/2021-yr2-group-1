@@ -11,6 +11,7 @@ using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
+    public PauseMenu menu;
     public static GameControl control; //create instance of gamecontrol class
     public GameObject playerObj = null; //reference to player
     public CharacterController playerController; //reference to player controller
@@ -18,7 +19,7 @@ public class GameControl : MonoBehaviour
     public PauseMenu pauseMenu;
     public int Rocks = 0;
     public bool isDead = false;
-  
+    public bool templeDiscovered = false;
 
     //Arrays for storing gamedata
     public float[] roomPercentage = new float[noOfRooms];
@@ -30,6 +31,7 @@ public class GameControl : MonoBehaviour
     public const int noOfCollectables = 16;
     public const int noOfRooms = 6;
     public int roomNumber;
+    public int previousRoomNumber;
 
     //floats for storing player location and rotation
     public float PosX, PosY, PosZ;
@@ -220,7 +222,6 @@ public class GameControl : MonoBehaviour
         }
         else SceneManager.LoadScene(currentScene.buildIndex);
     }
-
 }
 
 //private class for this only, it will be serialized so it fits into binary format

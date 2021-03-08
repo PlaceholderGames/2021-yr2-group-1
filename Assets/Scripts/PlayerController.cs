@@ -92,6 +92,10 @@ public class PlayerController : MonoBehaviour
                 SceneManager.LoadScene(6);
                 UnityEngine.Debug.Log("scene 6 skip");
             }
+            if (Input.GetKeyDown(KeyCode.Alpha1) && GameControl.control.noCollected[GameControl.control.roomNumber] != GameControl.control.roomCollectables[GameControl.control.roomNumber])
+            {
+                GameControl.control.noCollected[GameControl.control.roomNumber] += 1;
+            }
         }
 
         if (ladderToggle == false)
