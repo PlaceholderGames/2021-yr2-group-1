@@ -50,6 +50,7 @@ public class PauseMenu : MonoBehaviour
         completionCheck.SetActive(true);
         //Pauses time within engine
         Time.timeScale = 0f;
+        isPaused = true;
     }
 
     public void resumeGame()
@@ -91,6 +92,16 @@ public class PauseMenu : MonoBehaviour
             completionMenu.SetActive(false);
             menuChange = false;
         }
+    }
+
+    public void saveGame()
+    {
+        GameControl.control.Save("/playerInfo.dat");
+    }
+
+    public void loadGame()
+    {
+        GameControl.control.Load("/playerInfo.dat");
     }
 
     public void quitGame()
