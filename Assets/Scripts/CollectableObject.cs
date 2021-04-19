@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class CollectableObject : MonoBehaviour
 {
+    //Variables for audio feedback
+    [SerializeField]
+    private AudioClip clip;
+    private AudioSource audioSource;
+
     //Variables for checking if collection is allowed
     public bool collectionAllowed;
 
@@ -16,6 +21,11 @@ public class CollectableObject : MonoBehaviour
     public Renderer rend; //for referencing mesh on image
 
     public int itemID;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +51,7 @@ public class CollectableObject : MonoBehaviour
             //Toggles isCollected to prevent function from happening again
             GameControl.control.isCollected[itemID] = true;
             Debug.Log("Collected - " + itemID + " = " + GameControl.control.isCollected[itemID]);
+            audioSource.PlayOneShot(clip);
             cross.SetActive(false);
             dot.SetActive(true);
             GameControl.control.Save("/playerInfo.dat");

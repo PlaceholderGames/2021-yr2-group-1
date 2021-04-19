@@ -5570,6 +5570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2470d8001d34864ea8b632bd5be940d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: cacd423b6968e4640bbfb43fc3823480, type: 3}
   collectionAllowed: 0
   dot: {fileID: 723991871}
   cross: {fileID: 44455390}
@@ -6526,6 +6527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2470d8001d34864ea8b632bd5be940d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: cacd423b6968e4640bbfb43fc3823480, type: 3}
   collectionAllowed: 0
   dot: {fileID: 723991871}
   cross: {fileID: 44455390}
@@ -6700,6 +6702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2470d8001d34864ea8b632bd5be940d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: cacd423b6968e4640bbfb43fc3823480, type: 3}
   collectionAllowed: 0
   dot: {fileID: 723991871}
   cross: {fileID: 44455390}
@@ -9587,6 +9590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2470d8001d34864ea8b632bd5be940d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: cacd423b6968e4640bbfb43fc3823480, type: 3}
   collectionAllowed: 0
   dot: {fileID: 723991871}
   cross: {fileID: 44455390}
