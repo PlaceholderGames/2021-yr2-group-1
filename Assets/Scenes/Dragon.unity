@@ -9652,6 +9652,7 @@ MonoBehaviour:
   dot: {fileID: 2104437116}
   cross: {fileID: 2104437117}
   playerControl: {fileID: 758403399}
+  clip: {fileID: 8300000, guid: 78d4908328e546e4eb88ae69f0bf6f62, type: 3}
 --- !u!4 &553544431 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8492236081692381799, guid: 9428525a157fb4a429f6c6281719a0e9, type: 3}
@@ -9935,6 +9936,10 @@ PrefabInstance:
       propertyPath: isDestructable
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6797210408849570903, guid: e1da6a934b1c3f549b69479f9d2e6fa9, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c55e7805482e70845a9db1f703c74a22, type: 3}
     - target: {fileID: 6797210409890335935, guid: e1da6a934b1c3f549b69479f9d2e6fa9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.04
@@ -21047,6 +21052,10 @@ PrefabInstance:
       propertyPath: torchRequired
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6797210408849570903, guid: e1da6a934b1c3f549b69479f9d2e6fa9, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c55e7805482e70845a9db1f703c74a22, type: 3}
     - target: {fileID: 6797210409890335935, guid: e1da6a934b1c3f549b69479f9d2e6fa9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.04
@@ -33516,6 +33525,10 @@ PrefabInstance:
       propertyPath: torchRequired
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6797210408849570903, guid: e1da6a934b1c3f549b69479f9d2e6fa9, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c55e7805482e70845a9db1f703c74a22, type: 3}
     - target: {fileID: 6797210409890335935, guid: e1da6a934b1c3f549b69479f9d2e6fa9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.04
