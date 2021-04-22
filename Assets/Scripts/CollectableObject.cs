@@ -54,7 +54,7 @@ public class CollectableObject : MonoBehaviour
             audioSource.PlayOneShot(clip);
             cross.SetActive(false);
             dot.SetActive(true);
-            GameControl.control.Save("/playerInfo.dat");
+            GameControl.control.Save("/autoSave.dat");
             //Destroy(image); //this will cause problems when reloading
             //rend.enabled = false;
         }
