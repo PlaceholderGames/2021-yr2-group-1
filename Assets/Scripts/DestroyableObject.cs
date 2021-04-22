@@ -12,6 +12,11 @@ public class DestroyableObject : MonoBehaviour
 
     public PlayerController playerControl;
 
+    //Variables for audio feedback
+    [SerializeField]
+    private AudioClip clip;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +31,7 @@ public class DestroyableObject : MonoBehaviour
     {
         if (isDestructable == true && torchRequired == false && Input.GetMouseButton(1))
         {
+            AudioSource.PlayClipAtPoint(clip, transform.position, 0.5f);
             Destroy(gameObject);
             cross.SetActive(false);
             dot.SetActive(true);
@@ -34,6 +40,7 @@ public class DestroyableObject : MonoBehaviour
         {
             if(playerControl.torchToggle == true)
             {
+                AudioSource.PlayClipAtPoint(clip, transform.position, 0.3f);
                 Destroy(gameObject);
                 cross.SetActive(false);
                 dot.SetActive(true);

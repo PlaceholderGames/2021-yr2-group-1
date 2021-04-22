@@ -7,21 +7,16 @@ public class RockCollect : MonoBehaviour
     //Variables for audio feedback
     [SerializeField]
     private AudioClip clip;
-    private AudioSource audioSource;
 
     //Variables for checking if collection is allowed
     public bool collectionAllowed;
 
-//GameObjects for UI elements
-public GameObject dot;
-public GameObject cross;
+    //GameObjects for UI elements
+    public GameObject dot;
+    public GameObject cross;
+    
+    public int itemID;
 
-public int itemID;
-
-    private void Awake()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +37,7 @@ public int itemID;
            
             //Toggles isCollected to prevent function from happening again
             Debug.Log("Collected - " + itemID);
-            audioSource.PlayOneShot(clip);
+            AudioSource.PlayClipAtPoint(clip, transform.position, 0.2f);
             cross.SetActive(false);
             dot.SetActive(true);  
             GameControl.control.Rocks += 1;
